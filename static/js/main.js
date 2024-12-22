@@ -106,14 +106,14 @@ const translations = {
   },
 };
 
-const applyTranslations = (translations, page = true) => {
+const applyTranslations = (translations, isBodyContent = true) => {
   const currentLang = localStorage.getItem("language");
   const texts = translations[currentLang];
   let items =  document.querySelectorAll(
     "header [data-translate], footer [data-translate]"
   );
 
-  if (page) {
+  if (isBodyContent) {
     items = document.querySelectorAll(
       "body *[data-translate]:not(header *):not(footer *)"
     );
