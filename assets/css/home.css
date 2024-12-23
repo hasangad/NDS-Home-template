@@ -1,0 +1,87 @@
+/* hero */
+section.home-hero {
+  padding-block: 80px;
+  background: rgb(20, 87, 58);
+  background: linear-gradient(
+    330deg,
+    rgba(20, 87, 58, 1) 0%,
+    rgba(27, 131, 84, 1) 100%
+  );
+}
+
+.rtl section.home-hero {
+  background: linear-gradient(
+    45deg,
+    rgba(20, 87, 58, 1) 0%,
+    rgba(27, 131, 84, 1) 100%
+  );
+}
+
+section.home-hero h1 {
+  font-size: 60px;
+}
+
+
+/* news and articles */
+section.news .items .item .box {
+  border-radius: 16px;
+}
+
+section.news .items .item img {
+  border-radius: 8px;
+  height: 250px;
+}
+
+/* service section */
+.service-swiper .swiper-slide .item {
+  border-radius: 15px;
+  padding-inline: 13px;
+}
+.service-swiper .swiper-slide .item .icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 166, 0, 0.129);
+}
+.service-swiper .swiper-slide .item .icon i {
+  color: var(--main-color);
+}
+.service-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.service-swiper .swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+
+/* partner swiper */
+.partners-swiper .swiper-slide .item {
+  width: 90px;
+  height: 70px;
+  border-radius: 16px;
+}
+
+.partners-swiper .swiper-slide .item img {
+  height: 60px;
+  object-fit: contain;
+}
+section.partners .btn.prev,
+section.partners .btn.next {
+  top: 70px;
+  background-color: rgb(226, 226, 226);
+  position: absolute;
+}
+
+section.partners .btn.prev {
+  left: -38px;
+}
+
+section.partners .btn.next {
+  right: -38px;
+}
+
+@media (max-width: 767px) {
+  section.partners .btn.prev,
+  section.partners .btn.next {
+    position: static;
+  }
+}
