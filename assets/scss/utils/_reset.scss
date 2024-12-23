@@ -1,0 +1,13 @@
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.swiper {
+  direction: ltr;
+}
+
+.rtl .swiper .swiper-slide {
+  direction: rtl;
+}

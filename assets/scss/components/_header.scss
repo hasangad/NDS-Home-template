@@ -1,0 +1,26 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+nav.navbar form .input-group {
+  width: 117px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+nav.navbar form .input-group .input-group-text {
+  cursor: text;
+}
+
+nav.navbar form .input-group input {
+  font-size: 14px;
+}
+
+.navbar-brand a .logo,
+.navbar-brand a .h_2030 {
+  width: 66px;
+}

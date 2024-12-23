@@ -1,0 +1,21 @@
+footer {
+  background-color: var(--main-color-dark);
+}
+
+footer h5 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer .social li,
+footer .acceptability li {
+  border: 1px solid rgba(0, 135, 72, 0.659);
+}
+
+footer .logos img {
+  width: 70px;
+  object-fit: contain;
+}
+
+footer .logos img:nth-child(3) {
+  width: 150px;
+}

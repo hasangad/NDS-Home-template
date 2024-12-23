@@ -1,0 +1,27 @@
+.badge {
+  display: inline-block;
+  font-weight: 600;
+  padding: 3px 6px;
+  border: 1px solid transparent;
+  min-width: 10px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.badge.badge-default {
+  color: #1c1c1d;
+  border: 1px solid gray;
+}
+
+.badge.badge-primary {
+  background-color: #2195f330;
+  color: rgb(39, 39, 208);
+  border: 1px solid blue;
+}
+
+.badge.badge-success {
+  background-color: #63dd1721;
+  color: green;
+  border: 1px solid green;
+}
