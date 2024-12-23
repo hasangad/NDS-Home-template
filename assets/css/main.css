@@ -1,35 +1,22 @@
-@font-face {
-  font-family: "IBM";
-  src: url("../fonts/IBM/IBMPlexSansArabic-Bold.ttf")
-      format("truetype"),
-    url("../fonts/IBM/IBMPlexSansArabic-ExtraLight.ttf")
-      format("truetype"),
-    url("../fonts/IBM/IBMPlexSansArabic-Light.ttf")
-      format("truetype"),
-    url("../fonts/IBM/IBMPlexSansArabic-Medium.ttf")
-      format("truetype"),
-    url("../fonts/IBM/IBMPlexSansArabic-Regular.ttf")
-      format("truetype"),
-    url("../fonts/IBM/IBMPlexSansArabic-SemiBold.ttf")
-      format("truetype"),
-    url("../fonts/IBM/IBMPlexSansArabic-Thin.ttf")
-      format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: "IBM", sans-serif;
-}
-
-
 :root {
   --main-color: #1b8354;
   --main-color-dark: #074d31;
   --alt-color: #7c2390;
+  --white-color: white;
+  --gray-color: gray;
+  --gray-color-50: rgb(235, 235, 235);
 }
 
-/* reset */
+@font-face {
+  font-family: "IBM";
+  src: url("../fonts/IBM/IBMPlexSansArabic-Bold.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-ExtraLight.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-Light.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-Medium.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-Regular.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-SemiBold.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "IBM", sans-serif;
+}
+
 body * {
   padding: 0;
   margin: 0;
@@ -44,19 +31,6 @@ body * {
   direction: rtl;
 }
 
-.bi-arrow-right {
-  transition: transform 0.3s;
-}
-
-.rtl .bi-arrow-right::before {
-  transform: rotate(180deg);
-}
-
-.rtl .bi-arrow-left::before {
-  transform: rotate(180deg);
-}
-
-/* framework */
 .bg-gray-1 {
   background-color: #eee !important;
 }
@@ -114,19 +88,16 @@ img.main-rounded {
 }
 
 .w-fit {
+  width: -moz-fit-content !important;
   width: fit-content !important;
 }
 
 .object-fit-cover {
-  object-fit: cover !important;
-}
-.custom-container {
-  width: 70%;
-  margin-inline: auto;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
 }
 
-.text-truncate-1,
-.text-truncate-2 {
+.text-truncate-1, .text-truncate-2, .text-truncate-3, .text-truncate-4 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -135,17 +106,30 @@ img.main-rounded {
 .text-truncate-1 {
   -webkit-line-clamp: 1;
 }
+
 .text-truncate-2 {
   -webkit-line-clamp: 2;
 }
+
 .text-truncate-3 {
   -webkit-line-clamp: 3;
 }
+
 .text-truncate-4 {
   -webkit-line-clamp: 4;
 }
 
-/* components */
+.custom-container {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.main-line {
+  background-color: var(--main-color);
+  width: 90px;
+  height: 7px;
+}
+
 .badge {
   display: inline-block;
   font-weight: 600;
@@ -163,18 +147,17 @@ img.main-rounded {
 }
 
 .badge.badge-primary {
-  background-color: #2195f330;
+  background-color: rgba(33, 149, 243, 0.1882352941);
   color: rgb(39, 39, 208);
   border: 1px solid blue;
 }
 
 .badge.badge-success {
-  background-color: #63dd1721;
+  background-color: rgba(99, 221, 23, 0.1294117647);
   color: green;
   border: 1px solid green;
 }
 
-/* header */
 header {
   position: sticky;
   top: 0;
@@ -182,7 +165,6 @@ header {
   z-index: 10;
 }
 
-/* navbar-brand */
 nav.navbar form .input-group {
   width: 117px;
   border: 2px solid transparent;
@@ -202,14 +184,6 @@ nav.navbar form .input-group input {
   width: 66px;
 }
 
-/* main line */
-.main-line {
-  background-color: var(--main-color);
-  width: 90px;
-  height: 7px;
-}
-
-/* footer */
 footer {
   background-color: var(--main-color-dark);
 }
@@ -225,44 +199,10 @@ footer .acceptability li {
 
 footer .logos img {
   width: 70px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
+
 footer .logos img:nth-child(3) {
   width: 150px;
-}
-
-/* media screens */
-@media (max-width: 992px) {
-  header .icons span {
-    display: none;
-  }
-  .navbar-nav {
-    align-items: center;
-  }
-
-  .navbar-nav li a {
-    padding: 6px 24px;
-  }
-
-  .navbar-nav + form {
-    flex-direction: column;
-  }
-}
-
-/* tablet screen */
-@media (max-width: 767px) {
-  .custom-container {
-    width: 95%;
-  }
-
-  .w-sm-100 {
-    width: 100% !important;
-  }
-}
-
-/* phone screen */
-@media (max-width: 400px) {
-  .custom-container {
-    width: 98%;
-  }
 }
