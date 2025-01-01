@@ -1,31 +1,75 @@
+// var swiper = new Swiper(".service-swiper", {
+//   slidesPerView: 4,
+//   spaceBetween: 30,
+//   freeMode: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   loop: true,
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//       spaceBetween: 10,
+//     },
+//     400: {
+//       slidesPerView: 2,
+//       spaceBetween: 10,
+//     },
+//     768: {
+//       slidesPerView: 3,
+//       spaceBetween: 20,
+//     },
+//     992: {
+//       slidesPerView: 4,
+//       spaceBetween: 20,
+//     },
+//   },
+// });
+
+
 var swiper = new Swiper(".service-swiper", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  // loop: true, // Ensure loop is always on
+  freeMode: true, // Free mode for smooth dragging
+  slidesPerView: 'auto', // Adjust the number of slides based on content width
+  spaceBetween: 24, // Space between slides
+  autoplay: {
+    delay: 3000, // Time in ms between slide changes
+    disableOnInteraction: false, // Autoplay will continue even after user interaction
   },
-  loop: true,
+  pagination: {
+    el: ".swiper-pagination", // Pagination element
+    clickable: true, // Make pagination clickable
+  },
+  navigation: {
+    nextEl: ".swiper-button-next", // Next button element
+    prevEl: ".swiper-button-prev", // Previous button element
+  },
   breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    400: {
-      slidesPerView: 2,
-      spaceBetween: 10,
+    // Breakpoints to handle different screen sizes
+    640: {
+      slidesPerView: 2, // Show 2 slides for small screens
+      spaceBetween: 24,
     },
     768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
+      slidesPerView: 3, // Show 3 slides for medium screens
+      spaceBetween: 24,
     },
-    992: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+    1024: {
+      slidesPerView: 4, // Show 4 slides for large screens
+      spaceBetween: 24,
+    },
+    1400: {
+      slidesPerView: 5, // Show 5 slides for extra-large screens
+      spaceBetween: 24,
     },
   },
 });
+
+
+
+
+
 
 var swiper = new Swiper(".partners-swiper", {
   slidesPerView: 10,
@@ -86,7 +130,7 @@ const translationsContent = {
     cardBadgePrimary: "badge",
     cardBadgeSuccess: "badge",
     cardActionButton: "Action",
-    cardSecondaryActionButton: "Secondary Action",
+    cardSecondaryActionButton: "Secondary",
 
     // news and articles
     newsAndArticlesTitle: "News And Articles",

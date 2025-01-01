@@ -5,7 +5,45 @@
   --white-color: white;
   --gray-color: gray;
   --gray-color-50: rgb(235, 235, 235);
+
+/*DGA_Variables*/
+
+/*body&Card bg*/
+--background-card: #FFFFFF;
+/*text*/
+--text-display:#1F2A37;
+
+/*Badges*/
+--tag-text-success: #085D3A;
+--tag-border-success-light: #ABEFC6;
+--tag-background-success-light: #ECFDF3;
+
+--tag-text-info:#1849A9;
+--tag-border-info-light:#B2DDFF;
+--tag-background-info-light:#EFF8FF;
+
+--tag-text-neutral:#1F2A37;
+--border-neutral-secondary: #E5E7EB;
+--tag-background-neutral-light: #F9FAFB;
+
+/*Buttons*/
+/*primary*/
+--button-background-primary-default: #1B8354;
+--text-oncolor-primary:#FFFFFF;
+
+/*secondary*/
+--text-default:#D2D6DB;
+--border-neutral-primary: #161616;
+
+
+/*header&footer*/
+--background-SA-Flag:#074D31;
+--link-oncolor: #FFFFFF;
+
 }
+
+
+
 
 @font-face {
   font-family: "IBM";
@@ -29,6 +67,7 @@ body * {
 
 .rtl .swiper .swiper-slide {
   direction: rtl;
+  
 }
 
 .bg-gray-1 {
