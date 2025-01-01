@@ -5,45 +5,32 @@
   --white-color: white;
   --gray-color: gray;
   --gray-color-50: rgb(235, 235, 235);
-
-/*DGA_Variables*/
-
-/*body&Card bg*/
---background-card: #FFFFFF;
-/*text*/
---text-display:#1F2A37;
-
-/*Badges*/
---tag-text-success: #085D3A;
---tag-border-success-light: #ABEFC6;
---tag-background-success-light: #ECFDF3;
-
---tag-text-info:#1849A9;
---tag-border-info-light:#B2DDFF;
---tag-background-info-light:#EFF8FF;
-
---tag-text-neutral:#1F2A37;
---border-neutral-secondary: #E5E7EB;
---tag-background-neutral-light: #F9FAFB;
-
-/*Buttons*/
-/*primary*/
---button-background-primary-default: #1B8354;
---text-oncolor-primary:#FFFFFF;
-
-/*secondary*/
---text-default:#D2D6DB;
---border-neutral-primary: #161616;
-
-
-/*header&footer*/
---background-SA-Flag:#074D31;
---link-oncolor: #FFFFFF;
-
+  /*DGA_Variables*/
+  /*body&Card bg*/
+  --background-card: #FFFFFF;
+  /*text*/
+  --text-display:#1F2A37;
+  /*Badges*/
+  --tag-text-success: #085D3A;
+  --tag-border-success-light: #ABEFC6;
+  --tag-background-success-light: #ECFDF3;
+  --tag-text-info:#1849A9;
+  --tag-border-info-light:#B2DDFF;
+  --tag-background-info-light:#EFF8FF;
+  --tag-text-neutral:#1F2A37;
+  --border-neutral-secondary: #E5E7EB;
+  --tag-background-neutral-light: #F9FAFB;
+  /*Buttons*/
+  /*primary*/
+  --button-background-primary-default: #1B8354;
+  --text-oncolor-primary:#FFFFFF;
+  /*secondary*/
+  --text-default:#D2D6DB;
+  --border-neutral-primary: #161616;
+  /*header&footer*/
+  --background-SA-Flag:#074D31;
+  --link-oncolor: #FFFFFF;
 }
-
-
-
 
 @font-face {
   font-family: "IBM";
@@ -61,13 +48,16 @@ body * {
   box-sizing: border-box;
 }
 
+button, input, select, textarea {
+  box-shadow: none !important;
+}
+
 .swiper {
   direction: ltr;
 }
 
 .rtl .swiper .swiper-slide {
   direction: rtl;
-  
 }
 
 .bg-gray-1 {
@@ -169,6 +159,26 @@ img.main-rounded {
   height: 7px;
 }
 
+.btn.btn-primary {
+  background-color: var(--button-background-primary-default) !important;
+  color: var(--text-oncolor-primary) !important;
+  border: 1px solid var(--button-background-primary-default) !important;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  background-color: rgb(0, 95, 0) !important;
+}
+
+.btn.btn-secondary {
+  background-color: white !important;
+  color: var(--border-neutral-primary) !important;
+  border: 1px solid var(--border-neutral-primary) !important;
+}
+
+.btn.btn-secondary:hover, .btn.btn-secondary:focus {
+  background-color: rgb(239, 239, 239) !important;
+}
+
 .badge {
   display: inline-block;
   font-weight: 600;
@@ -181,20 +191,21 @@ img.main-rounded {
 }
 
 .badge.badge-default {
-  color: #1c1c1d;
-  border: 1px solid gray;
+  background-color: var(--tag-background-neutral-light);
+  color: var(--tag-text-neutral);
+  border: 1px solid var(--border-neutral-secondary);
 }
 
 .badge.badge-primary {
-  background-color: rgba(33, 149, 243, 0.1882352941);
-  color: rgb(39, 39, 208);
-  border: 1px solid blue;
+  background-color: var(--tag-background-info-light);
+  color: var(--tag-text-info);
+  border: 1px solid var(--tag-border-info-light);
 }
 
 .badge.badge-success {
-  background-color: rgba(99, 221, 23, 0.1294117647);
-  color: green;
-  border: 1px solid green;
+  background-color: var(--tag-background-success-light);
+  color: var(--tag-text-success);
+  border: 1px solid var(--tag-border-success-light);
 }
 
 header {
@@ -224,7 +235,7 @@ nav.navbar form .input-group input {
 }
 
 footer {
-  background-color: var(--main-color-dark);
+  background-color: var(--background-SA-Flag);
 }
 
 footer h5 {
@@ -244,4 +255,4 @@ footer .logos img {
 
 footer .logos img:nth-child(3) {
   width: 150px;
-}
+}/*# sourceMappingURL=main.css.map */

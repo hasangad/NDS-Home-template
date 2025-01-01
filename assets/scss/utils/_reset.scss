@@ -4,6 +4,10 @@ body * {
   box-sizing: border-box;
 }
 
+button, input, select, textarea{
+  box-shadow: none !important;
+}
+
 .swiper {
   direction: ltr;
 }
