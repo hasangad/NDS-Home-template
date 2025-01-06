@@ -15,12 +15,12 @@ const paths = {
     cssOutput: 'dist/css/',
     js: 'src/js/**/*.js',
     jsOutput: 'dist/js/',
-    images: 'src/images/**/*',
+    images: 'src/assets/images/**/*',
     imagesOutput: 'dist/assets/images',
-    fonts: 'src/fonts/**/*',
+    fonts: 'src/assets/fonts/**/*',
     fontsOutput: 'dist/assets/fonts',
-    html: 'src/*.html',
-    htmlOutput: 'dist/'
+    //html: 'src/*.html',
+    //htmlOutput: 'dist/'
 };
 
 // Compile SCSS to CSS
