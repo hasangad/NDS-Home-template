@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Visual Studio Code settings
+.vscode/
+
+# Build output
+#dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# Gulp cache
+.gulp-cache/
