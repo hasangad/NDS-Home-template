@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+// const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
