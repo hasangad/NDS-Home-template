@@ -13,14 +13,15 @@ const browserSync = require('browser-sync').create();
 const paths = {
     scss: 'src/scss/**/*.scss',
     cssOutput: 'dist/css/',
-    js: 'src/js/**/*.js',
+    js: ['src/addons/**/*.js',
+        'src/js/**/*.js'],
     jsOutput: 'dist/js/',
     images: 'src/assets/images/**/*',
     imagesOutput: 'dist/assets/images',
     fonts: 'src/assets/fonts/**/*',
     fontsOutput: 'dist/assets/fonts',
-    //html: 'src/*.html',
-    //htmlOutput: 'dist/'
+    html: 'src/*.html',
+    htmlOutput: 'dist/'
 };
 
 // Compile SCSS to CSS
@@ -43,14 +44,13 @@ function scripts() {
 
 // Optimize Images
 function images() {
-    return src(paths.images)
-        .pipe(imagemin())
+    return src(paths.images, { encoding: false })
         .pipe(dest(paths.imagesOutput));
 }
 
 // Copy Fonts
 function fonts() {
-    return src(paths.fonts)
+    return src(paths.fonts, { encoding: false })
         .pipe(dest(paths.fontsOutput));
 }
 
@@ -88,7 +88,7 @@ exports.default = series(
 );
 
 // Build Task
-exports.build = series(
-    clean,
-    parallel(styles, scripts, images, fonts, html)
-);
+// exports.build = series(
+//     clean,
+//     parallel(styles, scripts, images, fonts, html)
+// );

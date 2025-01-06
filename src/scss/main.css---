@@ -1,0 +1,54 @@
+:root {
+  --main-color: #1b8354;
+  --main-color-dark: #074d31;
+  --alt-color: #7c2390;
+  --white-color: white;
+  --gray-color: gray;
+  --gray-color-50: rgb(235, 235, 235);
+
+  /*DGA_Variables*/
+
+  /*body&Card bg*/
+  --background-card: #ffffff;
+  /*text*/
+  --text-display: #1f2a37;
+
+  /*Badges*/
+  --tag-text-success: #085d3a;
+  --tag-border-success-light: #abefc6;
+  --tag-background-success-light: #ecfdf3;
+
+  --tag-text-info: #1849a9;
+  --tag-border-info-light: #b2ddff;
+  --tag-background-info-light: #eff8ff;
+
+  --tag-text-neutral: #1f2a37;
+  --border-neutral-secondary: #e5e7eb;
+  --tag-background-neutral-light: #f9fafb;
+
+  /*Buttons*/
+  /*primary*/
+  --button-background-primary-default: #1b8354;
+  --text-oncolor-primary: #ffffff;
+
+  /*secondary*/
+  --text-default: #d2d6db;
+  --border-neutral-primary: #161616;
+
+  /*header&footer*/
+  --background-SA-Flag: #074d31;
+  --link-oncolor: #ffffff;
+}
+
+@font-face {
+  font-family: "IBM";
+  src: url("../fonts/IBM/IBMPlexSansArabic-Bold.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-ExtraLight.ttf") format("truetype"),
+    url("../fonts/IBM/IBMPlexSansArabic-Light.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-Medium.ttf") format("truetype"),
+    url("../fonts/IBM/IBMPlexSansArabic-Regular.ttf") format("truetype"), url("../fonts/IBM/IBMPlexSansArabic-SemiBold.ttf") format("truetype"),
+    url("../fonts/IBM/IBMPlexSansArabic-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "IBM", sans-serif;
+}
