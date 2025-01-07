@@ -1,31 +1,91 @@
-.bg-gray-1 { background-color: #eee !important; }
-.w-90 { width: 90%; }
-.main-p { padding: 16px; }
-.main-rounded { border-radius: 16px; }
-img.main-rounded { border-radius: 8px; }
-.main-br { border-bottom: 2px solid var(--main-color); }
-.pointer-event { cursor: pointer; }
-.rounded-full { border-radius: 50%; }
-.main-bg { background-color: var(--main-color) !important; }
-.main-bg-dark { background-color: var(--main-color-dark) !important; }
-.main-text { color: var(--main-color) !important; }
-.alt-bg { background-color: var(--alt-color) !important; }
-.alt-text { color: var(--alt-color) !important; }
-.bg-white { background-color: white !important; }
-.w-fit { width: fit-content !important; }
-.object-fit-cover { object-fit: cover !important; }
+.bg-gray-1 {
+  background-color: #eee !important;
+}
 
+.w-90 {
+  width: 90%;
+}
 
-.text-truncate-1, .text-truncate-2, .text-truncate-3, .text-truncate-4 {
+.main-p {
+  padding: 16px;
+}
+
+.main-rounded {
+  border-radius: 16px;
+}
+
+img.main-rounded {
+  border-radius: 8px;
+}
+
+.main-br {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.pointer-event {
+  cursor: pointer;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.main-bg {
+  background-color: var(--main-color) !important;
+}
+
+.main-bg-dark {
+  background-color: var(--main-color-dark) !important;
+}
+
+.main-text {
+  color: var(--main-color) !important;
+}
+
+.alt-bg {
+  background-color: var(--alt-color) !important;
+}
+
+.alt-text {
+  color: var(--alt-color) !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.w-fit {
+  width: fit-content !important;
+}
+
+.object-fit-cover {
+  object-fit: cover !important;
+}
+
+.text-truncate-1,
+.text-truncate-2,
+.text-truncate-3,
+.text-truncate-4 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.text-truncate-1 { -webkit-line-clamp: 1; }
-.text-truncate-2 { -webkit-line-clamp: 2; }
-.text-truncate-3 { -webkit-line-clamp: 3; }
-.text-truncate-4 { -webkit-line-clamp: 4; }
+.text-truncate-1 {
+  -webkit-line-clamp: 1;
+}
+
+.text-truncate-2 {
+  -webkit-line-clamp: 2;
+}
+
+.text-truncate-3 {
+  -webkit-line-clamp: 3;
+}
+
+.text-truncate-4 {
+  -webkit-line-clamp: 4;
+}
 
 .custom-container {
   width: 70%;
