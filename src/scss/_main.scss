@@ -22,4 +22,137 @@ body {
     option {
         color: var(--text-default);
     }
+
+    a {
+
+        &:hover,
+        &.nav-link:hover {
+            color: var(--link-primary-hovered);
+        }
+
+        // &:visited,
+        &:active,
+        &:focus,
+        // &.nav-link:visited,
+        &.nav-link:active,
+        &.nav-link:focus {
+            color: var(--link-primary-visited);
+        }
+
+
+    }
+
+    .userSurvey {
+        border-top: 2px solid var(--border-primary);
+    }
+}
+
+/* classes */
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    border-radius: 100%;
+    background-color: var(--background-neutral-200);
+    width: 48px;
+    height: 48px;
+
+    background-color: var(--stepper-button-completed);
+
+    &:after {
+        font-size: var(--text-md-regular);
+        color: var(--icon-oncolor);
+    }
+
+    &.swiper-button-disabled {
+        background-color: var(--background-neutral-50) !important;
+
+        &:after {
+            color: var(--colors-base-black);
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--background-neutral-200);
+    opacity: 1;
+
+    &.swiper-pagination-bullet-active {
+        background-color: var(--stepper-button-completed);
+    }
+}
+
+.icon-success {
+
+    color: var(--icon-success)
+}
+
+
+.badge,
+.tag {
+
+
+    color: var(--tag-text-color);
+    padding: var(--spacing-1_5) !important;
+
+    &.tag-success-light {
+        background-color: var(--tag-background-success-light);
+        border-color: var(--tag-border-success-light);
+        color: var(--tag-text-success);
+    }
+
+    &.tag-info-light {
+        background-color: var(--tag-background-info-light);
+        border-color: var(--tag-border-info-light);
+        color: var(--tag-text-info);
+    }
+
+    &.tag-neutral-light {
+        background-color: var(--tag-background-neutral-light);
+        border-color: var(--border-neutral-secondary);
+        color: var(--tag-text-neutral);
+    }
+}
+
+
+section {
+    padding: var(--spacing-10) var(--spacing-20);
+}
+
+.card {
+
+    background-color: var(--background-card);
+
+    >* {
+        margin-bottom: var(--spacing-6);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .cardContent {
+        >* {
+            margin-bottom: var(--spacing-2);
+        }
+
+        h2 {
+            font-size: var(--text-md--bold);
+        }
+    }
+
+}
+
+
+.border,
+.card {
+    border-color: var(--border-neutral-primary) !important
+}
+
+.background-neutral-50 {
+    background-color: var(--background-neutral-50);
+}
+
+.button-background-neutral-default {
+    background-color: var(--button-background-neutral-default);
 }

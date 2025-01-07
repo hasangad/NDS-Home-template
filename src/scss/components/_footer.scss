@@ -1,18 +1,76 @@
 footer {
-  background-color: var(--main-color-dark);
+  background-color: var(--background-sa-flag);
+
+
+  .followUs {
+    ul {
+      li {
+
+        border: 1px solid var(--border-oncolor-transparent-30);
+
+      }
+    }
+  }
+
+  ul {
+    li {
+      a {
+        padding: var(--spacing-1) 0;
+      }
+    }
+
+
+
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-oncolor-primary);
+    font-weight: 500;
+    padding-bottom: var(--spacing-2);
+    border-bottom: 1px solid var(--border-oncolor-transparent-30);
+  }
+
+  a,
+  div,
+  p,
+  span {
+    color: var(--link-oncolor);
+  }
+
+  a,
+  div,
+  p,
+  span {
+
+    font-size: var(--text-sm--regular);
+  }
+
+  a {
+    &:hover {
+      color: var(--link-oncolor-hovered);
+    }
+  }
+
+  i {
+    color: var(--icon-oncolor)
+  }
+
+
 }
 
 footer h5 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-footer .social li,
-footer .acceptability li {
-  border: 1px solid rgba(0, 135, 72, 0.659);
-}
 
 footer .logos img {
-  width: 70px;
+  height: 42px;
   object-fit: contain;
 }
 

@@ -1462,6 +1462,11 @@
 
   /* Extras */
 
+
+  .btn-default {
+    color: var(--text-oncolor-primary)
+  }
+
   .btn-light {
     background-color: var(--button-background-oncolor-default);
     border-color: var(--border-background-neutral);

@@ -31,7 +31,7 @@ section.home-hero h1 {
 
 /* news and articles */
 section.news .items .item .box {
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
 }
 
 section.news .items .item img {
@@ -48,11 +48,7 @@ section.news .items .item img {
 .service-swiper .swiper-slide .item .icon {
     width: 40px;
     height: 40px;
-    background-color: rgba(0, 166, 0, 0.129);
-}
-
-.service-swiper .swiper-slide .item .icon i {
-    color: var(--main-color);
+    background-color: var(--background-brand-light);
 }
 
 .service-swiper .swiper-pagination {
@@ -68,14 +64,10 @@ section.news .items .item img {
 .service-swiper .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: var(--white-color);
     border: 1px solid var(--gray-color);
     border-radius: 50%;
 }
 
-.service-swiper .swiper-pagination-bullet-active {
-    background-color: var(--main-color);
-}
 
 /* partner swiper */
 .partners-swiper .swiper-slide .item {
@@ -92,7 +84,6 @@ section.news .items .item img {
 section.partners .btn.prev,
 section.partners .btn.next {
     top: 70px;
-    background-color: var(--gray-color-50);
     position: absolute;
 }
 
@@ -111,7 +102,7 @@ section.partners .btn.next {
 
         i {
             display: block;
-            margin: 0 auto;
+            margin: 0 auto var(--spacing-6) auto;
             color: var(--icon-success);
             background-color: var(--background-brand-light);
             border-radius: 100%;
@@ -126,6 +117,8 @@ section.partners .btn.next {
         }
 
     }
+
+
 
 }
 

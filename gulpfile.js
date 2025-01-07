@@ -20,8 +20,8 @@ const paths = {
     imagesOutput: 'dist/assets/images',
     fonts: 'src/assets/fonts/**/*',
     fontsOutput: 'dist/assets/fonts',
-    // html: 'src/*.html',
-    // htmlOutput: 'dist/'
+    html: 'src/*.html',
+    htmlOutput: 'dist/'
 };
 
 // Compile SCSS to CSS
@@ -83,7 +83,7 @@ function watchFiles() {
 // Default Task
 exports.default = series(
     clean,
-    parallel(styles, scripts, images, fonts),
+    parallel(styles, scripts, images, fonts, html),
     watchFiles
 );
 

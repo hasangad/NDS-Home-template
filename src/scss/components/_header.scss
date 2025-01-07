@@ -19,6 +19,28 @@ header {
       height: 58px;
     }
 
+    .navbar-nav {
+
+      .nav-item {
+
+        .nav-link {
+          font-weight: 500;
+        }
+
+
+        .dropdown-menu {
+          .dropdown-item {
+
+            &:focus {
+              background-color: var(--background-primary);
+            }
+
+          }
+        }
+      }
+
+    }
+
     form {
       .input-group {
         width: 117px;

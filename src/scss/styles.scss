@@ -5,13 +5,13 @@
 @use './utils/fonts';
 @use './utils/reset';
 @use './utils/utils';
+// Main
+@use './main';
 // Components
 @use './components/main-line';
 @use './components/badge';
 @use './components/header';
 @use './components/footer';
-// Main
-@use './main';
 // Pages
 @use './pages/home';
 // Output: ../../main.css
