@@ -55,3 +55,14 @@ header {
 
   }
 }
+
+@media (max-width:992px) {
+  header ul.navbar-nav{
+    align-items: center;
+  }
+  header form{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
