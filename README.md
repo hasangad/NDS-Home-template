@@ -1,5 +1,7 @@
 # Platforms Code - Entry Point
 
+![Desktop Preview](https://raw.githubusercontent.com/hasangad/NDS-Home-template/refs/heads/master/desktop_preview.gif)
+
 ## Overview
 
 This project is a voluntary effort by a team of three individuals:
@@ -11,6 +13,8 @@ This project is a voluntary effort by a team of three individuals:
 Our goal is to create a simplified entry point for companies and organizations in Saudi Arabia to apply the **"Platforms Code"** using **Bootstrap 5**. This is achieved by providing a well-coded home page template.
 
 ## Features
+
+![Desktop Preview](https://raw.githubusercontent.com/hasangad/NDS-Home-template/refs/heads/master/mobile_preview.gif)
 
 - Fully responsive design.
 - Built on **Bootstrap 5** for scalability and flexibility.
