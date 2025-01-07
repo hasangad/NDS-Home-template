@@ -1,6 +1,6 @@
 # Platforms Code - Entry Point
 
-![Desktop Preview](https://raw.githubusercontent.com/hasangad/NDS-Home-template/refs/heads/master/desktop_preview.gif)
+![Desktop Preview](https://raw.githubusercontent.com/hasangad/NDS-Home-template/refs/heads/master/Desktop_preview.gif)
 
 ## Overview
 
