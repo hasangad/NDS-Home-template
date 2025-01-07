@@ -1,11 +1,11 @@
-const inputGroup = document.getElementById("input-group");
+const headerSearchInputGroup = document.getElementById("header-search");
 const input = document.getElementById("search-input");
 const searchIcon = document.getElementById("search-input-icon");
 
 const handleInputFocus = () => {
-  inputGroup.style.border = "2px solid var(--main-color)";
-  inputGroup.style.borderRadius = "4px";
-  inputGroup.style.width = "200px";
+  headerSearchInputGroup.style.border = "2px solid green";
+  headerSearchInputGroup.style.borderRadius = "4px";
+  headerSearchInputGroup.style.width = "200px";
   input.focus();
 };
 
@@ -13,8 +13,8 @@ searchIcon.addEventListener("click", handleInputFocus);
 input.addEventListener("focus", handleInputFocus);
 
 input.addEventListener("blur", () => {
-  inputGroup.style.borderColor = "transparent";
-  inputGroup.style.width = "117px";
+  headerSearchInputGroup.style.borderColor = "transparent";
+  headerSearchInputGroup.style.width = "117px";
 });
 
 // translate

@@ -1,845 +1,1065 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#074D31" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-theme-color" content="#074D31" />
+    <meta name="apple-mobile-web-app-title" content="NDS Home Template" />
+    <link
+      rel="mask-icon"
+      href="./assets/images/shared/gov_logo.svg"
+      color="#4CAF50"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/shared/gov_logo.ico"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- custom -->
+    <link rel="stylesheet" href="./css/your-custom-css-file.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#074D31">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-theme-color" content="#074D31">
-  <meta name="apple-mobile-web-app-title" content="NDS Home Template">
-  <link rel="mask-icon" href="./assets/images/shared/gov_logo.svg" color="#4CAF50">
-  <link rel="icon" type="image/x-icon" href="./assets/images/shared/gov_logo.ico" />
-  <title>Home</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-  <!-- custom -->
-  <link rel="stylesheet" href="./css/your-custom-css-file.css" />
+  <body>
+    <!-- navbar -->
+    <header>
+      <!-- Top Bar -->
+      <div
+        class="topBar icons d-flex justify-content-between py-2 px-4 flex-wrap d-none"
+      >
+        <!-- start Icons -->
+        <ul
+          class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0"
+        >
+          <li>
+            <i class="bi bi-cloud"></i>
+            <span>Cloud</span>
+          </li>
+          <li>
+            <i class="bi bi-calendar"></i>
+            <span>3-Sep-2024</span>
+          </li>
+          <li>
+            <i class="bi bi-clock"></i>
+            <span>2:30 PM</span>
+          </li>
+          <li>
+            <i class="bi bi-geo-alt"></i>
+            <span>Al-Riyadh</span>
+          </li>
+        </ul>
 
-</head>
+        <!-- end Icons -->
+        <ul
+          class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0"
+        >
+          <li><i class="bi bi-mic"></i></li>
+          <li><i class="bi bi-zoom-in"></i></li>
+          <li><i class="bi bi-zoom-out"></i></li>
+          <li><i class="bi bi-eye"></i></li>
+        </ul>
+      </div>
 
-<body>
-  <!-- navbar -->
-  <header>
-    <!-- Top Bar -->
-    <div class="topBar icons d-flex justify-content-between py-2 px-4 flex-wrap d-none">
-      <!-- start Icons -->
-      <ul class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0">
-        <li>
-          <i class="bi bi-cloud"></i>
-          <span>Cloud</span>
-        </li>
-        <li>
-          <i class="bi bi-calendar"></i>
-          <span>3-Sep-2024</span>
-        </li>
-        <li>
-          <i class="bi bi-clock"></i>
-          <span>2:30 PM</span>
-        </li>
-        <li>
-          <i class="bi bi-geo-alt"></i>
-          <span>Al-Riyadh</span>
-        </li>
-      </ul>
-
-      <!-- end Icons -->
-      <ul class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0">
-        <li><i class="bi bi-mic"></i></li>
-        <li><i class="bi bi-zoom-in"></i></li>
-        <li><i class="bi bi-zoom-out"></i></li>
-        <li><i class="bi bi-eye"></i></li>
-      </ul>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid px-0 px-md-2">
-        <!-- Brand Section -->
-        <div class="navbar-brand w-fit row col-2 col-sm-2 col-auto align-items-center mx-0">
-          <a href="/" class="col-auto">
-            <img src="./assets/images/shared/Logo_&_GOV.svg" alt="GEA Logo" class="logo" />
-          </a>
-        </div>
-
-        <!-- Toggler Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"> <i class="bi bi-list fs-1"></i> </span>
-        </button>
-
-        <!-- Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Links -->
-          <ul class="navbar-nav d-flex flex-grow-1 gap-2 mb-2 mb-lg-0 ps-4 ps-md-0 py-4 py-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Home
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#About">
-                About
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Tabs
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">Tab 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Tab 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link " href="#" role="button">
-                Tabs
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">Tab 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Tab 2</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-          <!-- Search and Buttons -->
-          <form
-            class="d-flex flex-grow-1 gap-1 align-items-center justify-content-center justify-content-md-end flex-wrap">
-            <div class="input-group px-2 d-flex" id="input-group">
-              <span class="input-group-text px-0 bg-transparent border-0" id="search-input-icon">
-                <i class="bi bi-search"></i>
-              </span>
-              <input type="text" class="form-control bg-transparent border-0 shadow-none flex-grow-1"
-                placeholder="Search" aria-label="Search" aria-describedby="search-input-icon" id="search-input" />
-            </div>
-            <a href="" type="button" id="langButton" class="btn shadow-none">
-              <i class="bi bi-translate fs-5"></i>
-              <span>عربى</span>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0 px-md-2">
+          <!-- Brand Section -->
+          <div
+            class="navbar-brand w-fit row col-2 col-sm-2 col-auto align-items-center mx-0"
+          >
+            <a href="/" class="col-auto">
+              <img
+                src="./assets/images/shared/Logo_&_GOV.svg"
+                alt="GEA Logo"
+                class="logo"
+              />
             </a>
-            <a href="#" type="button" class="btn shadow-none">
-              <i class="bi bi-person fs-5"></i>
-              <span class="login">Login</span>
-            </a>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
+          </div>
 
-  <!-- hero -->
-  <section class="home-hero d-flex align-items-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-5">
-          <h1 class="d-block">
-            Hero section
-          </h1>
-          <span class="d-block my-3">
-            Here you can add a brief description about the purpose of the portal followed with a call to action button
-            and
-            an image
-            or an illustration on the left hand side.
-          </span>
-          <button class="d-block btn btn-light">
-            Main Action
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="bi bi-list fs-1"></i>
+            </span>
           </button>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Us section -->
-  <section id="About" class="nds-about py-5 my-3">
-    <div class="container">
-      <div class="row m-0">
-        <div class="col-10 col-md-8">
-          <h2 class="">
-            About us Section
-          </h2>
-          <p class="small my-4">
-            Here you can add a short description about the purpose of the
-            portal followed by a call to action button and an image or
-            illustration on the left side.
-          </p>
-        </div>
-        <div class="col-2 col-md-4 d-flex justify-content-end align-items-start">
-          <button class="btn btn-default border shadow-none">
-            Secondary
-          </button>
-        </div>
-      </div>
-    </div>
+          <!-- Navbar Content -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul
+              class="navbar-nav d-flex flex-grow-1 gap-2 mb-2 mb-lg-0 ps-4 ps-md-0 py-4 py-md-0"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Home </a>
+              </li>
 
-    <div class="our-statistics container">
-      <div class="row mt-5 gy-2 mx-0">
-        <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
-          <i class="bi bi-people"></i>
-          <div>
-            <p class="fs-1">1.5M</p>
-            <span class="small">Person</span>
-          </div>
-        </div>
-        <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
-          <i class="bi bi-plus-lg fs-1"></i>
-          <div>
-            <p class="fs-1">1.5M</p>
-            <span class="small">Person</span>
-          </div>
-        </div>
-        <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
-          <i class="bi bi-star fs-1"></i>
-          <div>
-            <p class="fs-1">1.5M</p>
-            <span class="small">Person</span>
-          </div>
-        </div>
-        <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
-          <i class="bi bi-flower3 fs-1"></i>
-          <div>
-            <p class="fs-1">1.5M</p>
-            <span class="small">Person</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+              <li class="nav-item">
+                <a class="nav-link" href="#About"> About </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tabs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Tab 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Tab 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button"> Tabs </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Tab 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Tab 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
 
-  <!-- Service section  -->
-  <section id="services" class="nds-services container-fluid overflow-hidden background-neutral-50">
-    <div class="container">
-
-      <div class="row m-0">
-        <div class="col-8 col-md-8 p-0">
-          <h2 class="">
-            Services section
-          </h2>
-        </div>
-        <div class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start">
-          <button class="btn btn-default border shadow-none">
-            View all
-          </button>
-        </div>
-      </div>
-
-      <p class="col-9 mt-3">
-        Here you can add a short description about the purpose of the portal
-        followed by a call to action button and an image or illustration on
-        the left side.
-      </p>
-
-    </div>
-
-    <!-- Swiper Section -->
-    <div class="swiper service-swiper pb-5 swiper-container position-relative">
-      <div class="swiper-wrapper mt-5">
-        <div class="swiper-slide">
-          <div class="card item border w-100 py-2">
-            <div class="rounded-full icon d-flex justify-content-center mb-3 align-items-center">
-              <i class="bi bi-check-circle icon-success"></i>
-            </div>
-            <div class="cardContent">
-              <h2 class=" mt-2 text-truncate-2">
-                Card Title
-              </h2>
-              <p class="small my-2">
-                Card description
-              </p>
-            </div>
-            <div class="d-flex gap-2 flex-wrap mb-3">
-              <span class="badge tag tag-success-light">Tage 1</span>
-              <span class="badge tag tag-info-light">Tage 2</span>
-              <span class="badge tag tag-neutral-light">Tage 3</span>
-            </div>
-            <div class="controls d-flex gap-2">
-              <a href="#" class="rounded border btn btn-success shadow-none">
-                Action
+            <!-- Search and Buttons -->
+            <form
+              class="d-flex flex-grow-1 gap-1 align-items-center justify-content-center justify-content-md-end flex-wrap"
+            >
+              <div class="input-group px-2 d-flex" id="header-search">
+                <span
+                  class="input-group-text px-0 bg-transparent border-0"
+                  id="search-input-icon"
+                >
+                  <i class="bi bi-search"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-0 shadow-none flex-grow-1"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="search-input-icon"
+                  id="search-input"
+                />
+              </div>
+              <a href="" type="button" id="langButton" class="btn shadow-none">
+                <i class="bi bi-translate fs-5"></i>
+                <span>عربى</span>
               </a>
-              <a href="#" class="btn-default rounded border btn shadow-none">
-                Secondary
+              <a href="#" type="button" class="btn shadow-none">
+                <i class="bi bi-person fs-5"></i>
+                <span class="login">Login</span>
               </a>
-            </div>
+            </form>
           </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="swiper-slide">
-          <div class="card  item border w-100 py-2">
-            <div class="rounded-full icon d-flex justify-content-center mb-3 align-items-center">
-              <i class="bi bi-check-circle icon-success"></i>
-            </div>
-            <div class="cardContent">
-              <h2 class=" mt-2 text-truncate-2">
-                Card Title
-              </h2>
-              <p class="small my-2">
-                Card description
-              </p>
-            </div>
-            <div class="d-flex gap-2 flex-wrap mb-3">
-              <span class="badge tag tag-success-light">Tage 1</span>
-              <span class="badge tag tag-info-light">Tage 2</span>
-              <span class="badge tag tag-neutral-light">Tage 3</span>
-            </div>
-            <div class="controls d-flex gap-2">
-              <a href="#" class="rounded border btn btn-success shadow-none">
-                Action
-              </a>
-              <a href="#" class="btn-default rounded border btn shadow-none">
-                Secondary
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card  item border w-100 py-2">
-            <div class="rounded-full icon d-flex justify-content-center mb-3 align-items-center">
-              <i class="bi bi-check-circle icon-success"></i>
-            </div>
-            <div class="cardContent">
-              <h2 class=" mt-2 text-truncate-2">
-                Card Title
-              </h2>
-              <p class="small my-2">
-                Card description
-              </p>
-            </div>
-            <div class="d-flex gap-2 flex-wrap mb-3">
-              <span class="badge tag tag-success-light">Tage 1</span>
-              <span class="badge tag tag-info-light">Tage 2</span>
-              <span class="badge tag tag-neutral-light">Tage 3</span>
-            </div>
-            <div class="controls d-flex gap-2">
-              <a href="#" class="rounded border btn btn-success shadow-none">
-                Action
-              </a>
-              <a href="#" class="btn-default  rounded border btn shadow-none">
-                Secondary
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card  item border w-100 py-2">
-            <div class="rounded-full icon d-flex justify-content-center mb-3 align-items-center">
-              <i class="bi bi-check-circle icon-success"></i>
-            </div>
-            <div class="cardContent">
-              <h2 class=" mt-2 text-truncate-2">
-                Card Title
-              </h2>
-              <p class="small my-2">
-                Card description
-              </p>
-            </div>
-            <div class="d-flex gap-2 flex-wrap mb-3">
-              <span class="badge tag tag-success-light">Tage 1</span>
-              <span class="badge tag tag-info-light">Tage 2</span>
-              <span class="badge tag tag-neutral-light">Tage 3</span>
-            </div>
-            <div class="controls d-flex gap-2">
-              <a href="#" class="rounded border btn btn-success shadow-none">
-                Action
-              </a>
-              <a href="#" class="btn-default  rounded border btn shadow-none">
-                Secondary
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card item border w-100 py-2">
-            <div class="rounded-full icon d-flex justify-content-center mb-3 align-items-center">
-              <i class="bi bi-check-circle icon-success"></i>
-            </div>
-            <div class="cardContent">
-              <h2 class=" mt-2 text-truncate-2">
-                Card Title
-              </h2>
-              <p class="small my-2">
-                Card description
-              </p>
-            </div>
-            <div class="d-flex gap-2 flex-wrap mb-3">
-              <span class="badge tag tag-success-light">Tage 1</span>
-              <span class="badge tag tag-info-light">Tage 2</span>
-              <span class="badge tag tag-neutral-light">Tage 3</span>
-            </div>
-            <div class="controls d-flex gap-2">
-              <a href="#" class="rounded border btn btn-success shadow-none">
-                Action
-              </a>
-              <a href="#" class="btn-default  rounded border btn shadow-none">
-                Secondary
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card item border w-100 py-2">
-            <div class="rounded-full icon d-flex justify-content-center mb-3 align-items-center">
-              <i class="bi bi-check-circle icon-success"></i>
-            </div>
-            <div class="cardContent">
-              <h2 class=" mt-2 text-truncate-2">
-                Card Title
-              </h2>
-              <p class="small my-2">
-                Card description
-              </p>
-            </div>
-            <div class="d-flex gap-2 flex-wrap mb-3">
-              <span class="badge tag tag-success-light">Tage 1</span>
-              <span class="badge tag tag-info-light">Tage 2</span>
-              <span class="badge tag tag-neutral-light">Tage 3</span>
-            </div>
-            <div class="controls d-flex gap-2">
-              <a href="#" class="rounded border btn btn-success shadow-none">
-                Action
-              </a>
-              <a href="#" class="btn-default  rounded border btn shadow-none">
-                Secondary
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="card item border w-100 py-2">
-            <div class="rounded-full icon d-flex justify-content-center mb-3 align-items-center">
-              <i class="bi bi-check-circle icon-success"></i>
-            </div>
-            <div class="cardContent">
-              <h2 class=" mt-2 text-truncate-2">
-                Card Title
-              </h2>
-              <p class="small my-2">
-                Card description
-              </p>
-            </div>
-            <div class="d-flex gap-2 flex-wrap mb-3">
-              <span class="badge tag tag-success-light">Tage 1</span>
-              <span class="badge tag tag-info-light">Tage 2</span>
-              <span class="badge tag tag-neutral-light">Tage 3</span>
-            </div>
-            <div class="controls d-flex gap-2">
-              <a href="#" class="rounded border btn btn-success shadow-none">
-                Action
-              </a>
-              <a href="#" class="btn-default  rounded border btn shadow-none">
-                Secondary
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-100 mt-4">
-
-        <div class="d-flex justify-content-between  align-items-center py-4 mx-5">
-          <!-- Pagination -->
-          <div class="swiper-pagination position-relative start-0 end-0 bottom-0"></div>
-          <div class="position-relative me-5 pe-4">
-            <!-- Navigation buttons -->
-            <div class="swiper-button-prev start-0 end-0 bottom-0"></div>
-            <div class="swiper-button-next start-0 end-0 bottom-0" style="left:50px !important"></div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  </section>
-
-  <!-- new and articles section -->
-  <section class="news py-4">
-    <div class="container">
-      <div class="row m-0">
-        <div class="col-8 col-md-8 p-0">
-          <h2>
-            News And Articles
-          </h2>
-        </div>
-        <div class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start">
-          <button class="btn btn-default border shadow-none">
-            View all
-          </button>
-        </div>
-      </div>
-
-      <p class="col-9 mt-3">
-        Here you can add a short description
-      </p>
-
-      <div class="items row g-3 mt-2">
-        <div class="item col-12 col-md-6 col-lg-4">
-          <div class="card  p-3 box">
-            <div class="image">
-              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
-            </div>
-            <div class="cardContent">
-              <h2 class="text-truncate-2 text-capitalize">
-                Title Card in two lines
-              </h2>
-              <p class="text-truncate-4 small">
-                Here you can include a brief description
-              </p>
-            </div>
-            <div class="cardActions row mx-0">
-              <button class="btn btn-success col-auto rounded border">
-                Action
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="item col-12 col-md-6 col-lg-4">
-          <div class="card p-3 box">
-            <div class="image">
-              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
-            </div>
-            <div class="cardContent">
-              <h2 class="text-truncate-2 text-capitalize">
-                Title Card in two lines
-              </h2>
-              <p class="text-truncate-4 small">
-                Here you can include a brief description
-              </p>
-            </div>
-            <div class="cardActions row mx-0">
-              <button class="btn btn-success col-auto rounded border">
-                Action
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="item col-12 col-md-6 col-lg-4">
-          <div class="card  p-3 box">
-            <div class="image">
-              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
-            </div>
-            <div class="cardContent">
-              <h2 class="text-truncate-2 text-capitalize">
-                Title Card in two lines
-              </h2>
-              <p class="text-truncate-4 small">
-                Here you can include a brief description
-              </p>
-            </div>
-            <div class="cardActions row mx-0">
-              <button class="btn btn-success col-auto rounded border">
-                Action
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Partners section -->
-  <section class="partners my-4">
-    <div class="container position-relative">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2 class="mb-3">Partners</h2>
-        <div class="d-flex gap-2">
-          <button class="prev absolute btn shadow-none button-background-neutral-default">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-          <button class="next absolute btn shadow-none button-background-neutral-default">
-            <i class="bi bi-chevron-right"></i>
-          </button>
-        </div>
-      </div>
-      <div class="swiper partners-swiper">
+    <!-- hero -->
+    <section class="home-hero">
+      <div class="swiper hero-swiper">
         <div class="swiper-wrapper pb-3">
+          <!-- create a swiper here, its swiper slide -->
           <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
+            <div class="row mx-0">
+              <div class="col-12 col-md-5">
+                <h1 class="d-block">Hero section</h1>
+                <span class="d-block my-3">
+                  Here you can add a brief description about the purpose of the
+                  portal followed with a call to action button and an image or
+                  an illustration on the left hand side.
+                </span>
+                <button class="d-block btn btn-light">Main Action</button>
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
+            <div class="row mx-0">
+              <div class="col-12 col-md-5">
+                <h1 class="d-block">Hero section</h1>
+                <span class="d-block my-3">
+                  Here you can add a brief description about the purpose of the
+                  portal followed with a call to action button and an image or
+                  an illustration on the left hand side.
+                </span>
+                <button class="d-block btn btn-light">Main Action</button>
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item border d-flex justify-content-center">
-              <img class="img-fluid p-2" src="./assets/images/shared/Logo_gov.svg" alt="" />
+            <div class="row mx-0">
+              <div class="col-12 col-md-5">
+                <h1 class="d-block">Hero section</h1>
+                <span class="d-block my-3">
+                  Here you can add a brief description about the purpose of the
+                  portal followed with a call to action button and an image or
+                  an illustration on the left hand side.
+                </span>
+                <button class="d-block btn btn-light">Main Action</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div
+        class="hero-swiper-pagination swiper-pagination position-relative start-0 end-0 bottom-0"
+      ></div>
+    </section>
 
-  <!-- section -->
-  <div class="container my-3 d-flex justify-content-center justify-content-md-end">
-    <p class="small">
-      Last Modified Date: 04/12/2020 - 4:13 PM Saudi Arabia Time
-    </p>
-  </div>
-  <div class="userSurvey container-fluid my-3 pt-3">
-    <div class="container">
-      <div class="col-12">
-        <div class="row mb-3 align-items-center">
-          <p class="col-7 col-md-2">
-            Was this page useful?
-          </p>
-          <button class="col-2 col-md-auto btn btn-success shadow-none me-1">
-            Yes
-          </button>
-          <button class="col-2 col-md-auto btn btn-default shadow-none border">
-            No
-          </button>
+    <!-- About Us section -->
+    <section id="About" class="nds-about py-5 my-3">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-10 col-md-8">
+            <h2 class="">About us Section</h2>
+            <p class="small my-4">
+              Here you can add a short description about the purpose of the
+              portal followed by a call to action button and an image or
+              illustration on the left side.
+            </p>
+          </div>
+          <div
+            class="col-2 col-md-4 d-flex justify-content-end align-items-start"
+          >
+            <button class="btn btn-default border shadow-none">
+              Secondary
+            </button>
+          </div>
         </div>
-        <p>
-          60% of users said Yes from 2843 Feedbacks
+      </div>
+
+      <div class="our-statistics container">
+        <div class="row mt-5 gy-2 mx-0">
+          <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
+            <i class="bi bi-people"></i>
+            <div>
+              <p class="fs-1">1.5M</p>
+              <span class="small">Person</span>
+            </div>
+          </div>
+          <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
+            <i class="bi bi-plus-lg fs-1"></i>
+            <div>
+              <p class="fs-1">1.5M</p>
+              <span class="small">Person</span>
+            </div>
+          </div>
+          <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
+            <i class="bi bi-star fs-1"></i>
+            <div>
+              <p class="fs-1">1.5M</p>
+              <span class="small">Person</span>
+            </div>
+          </div>
+          <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
+            <i class="bi bi-flower3 fs-1"></i>
+            <div>
+              <p class="fs-1">1.5M</p>
+              <span class="small">Person</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service section  -->
+    <section
+      id="services"
+      class="nds-services container-fluid overflow-hidden background-neutral-50"
+    >
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-8 col-md-8 p-0">
+            <h2 class="">Services section</h2>
+          </div>
+          <div
+            class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start"
+          >
+            <button class="btn btn-default border shadow-none">View all</button>
+          </div>
+        </div>
+
+        <p class="col-9 mt-3">
+          Here you can add a short description about the purpose of the portal
+          followed by a call to action button and an image or illustration on
+          the left side.
         </p>
       </div>
-    </div>
-  </div>
 
-  <!-- footer -->
-  <footer class="py-5">
-    <div class="container">
-      <div class="row m-0 g-3">
-        <div class="col-12 col-md-6 col-lg-3">
-          <h5 class=" pb-2">
-            Overview
-          </h5>
-          <ul class="list-unstyled mt-2">
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                About [name of the portal]
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Privacy and terms of use
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                How to use
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                News and events
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Service level agreement statistics
-              </a>
-            </li>
-          </ul>
+      <!-- Swiper Section -->
+      <div
+        class="swiper service-swiper pb-5 swiper-container position-relative"
+      >
+        <div class="swiper-wrapper mt-5">
+          <div class="swiper-slide">
+            <div class="card item border w-100 py-2">
+              <div
+                class="rounded-full icon d-flex justify-content-center mb-3 align-items-center"
+              >
+                <i class="bi bi-check-circle icon-success"></i>
+              </div>
+              <div class="cardContent">
+                <h2 class="mt-2 text-truncate-2">Card Title</h2>
+                <p class="small my-2">Card description</p>
+              </div>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge tag tag-success-light">Tage 1</span>
+                <span class="badge tag tag-info-light">Tage 2</span>
+                <span class="badge tag tag-neutral-light">Tage 3</span>
+              </div>
+              <div class="controls d-flex gap-2">
+                <a href="#" class="rounded border btn btn-success shadow-none">
+                  Action
+                </a>
+                <a href="#" class="btn-default rounded border btn shadow-none">
+                  Secondary
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card item border w-100 py-2">
+              <div
+                class="rounded-full icon d-flex justify-content-center mb-3 align-items-center"
+              >
+                <i class="bi bi-check-circle icon-success"></i>
+              </div>
+              <div class="cardContent">
+                <h2 class="mt-2 text-truncate-2">Card Title</h2>
+                <p class="small my-2">Card description</p>
+              </div>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge tag tag-success-light">Tage 1</span>
+                <span class="badge tag tag-info-light">Tage 2</span>
+                <span class="badge tag tag-neutral-light">Tage 3</span>
+              </div>
+              <div class="controls d-flex gap-2">
+                <a href="#" class="rounded border btn btn-success shadow-none">
+                  Action
+                </a>
+                <a href="#" class="btn-default rounded border btn shadow-none">
+                  Secondary
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card item border w-100 py-2">
+              <div
+                class="rounded-full icon d-flex justify-content-center mb-3 align-items-center"
+              >
+                <i class="bi bi-check-circle icon-success"></i>
+              </div>
+              <div class="cardContent">
+                <h2 class="mt-2 text-truncate-2">Card Title</h2>
+                <p class="small my-2">Card description</p>
+              </div>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge tag tag-success-light">Tage 1</span>
+                <span class="badge tag tag-info-light">Tage 2</span>
+                <span class="badge tag tag-neutral-light">Tage 3</span>
+              </div>
+              <div class="controls d-flex gap-2">
+                <a href="#" class="rounded border btn btn-success shadow-none">
+                  Action
+                </a>
+                <a href="#" class="btn-default rounded border btn shadow-none">
+                  Secondary
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card item border w-100 py-2">
+              <div
+                class="rounded-full icon d-flex justify-content-center mb-3 align-items-center"
+              >
+                <i class="bi bi-check-circle icon-success"></i>
+              </div>
+              <div class="cardContent">
+                <h2 class="mt-2 text-truncate-2">Card Title</h2>
+                <p class="small my-2">Card description</p>
+              </div>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge tag tag-success-light">Tage 1</span>
+                <span class="badge tag tag-info-light">Tage 2</span>
+                <span class="badge tag tag-neutral-light">Tage 3</span>
+              </div>
+              <div class="controls d-flex gap-2">
+                <a href="#" class="rounded border btn btn-success shadow-none">
+                  Action
+                </a>
+                <a href="#" class="btn-default rounded border btn shadow-none">
+                  Secondary
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card item border w-100 py-2">
+              <div
+                class="rounded-full icon d-flex justify-content-center mb-3 align-items-center"
+              >
+                <i class="bi bi-check-circle icon-success"></i>
+              </div>
+              <div class="cardContent">
+                <h2 class="mt-2 text-truncate-2">Card Title</h2>
+                <p class="small my-2">Card description</p>
+              </div>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge tag tag-success-light">Tage 1</span>
+                <span class="badge tag tag-info-light">Tage 2</span>
+                <span class="badge tag tag-neutral-light">Tage 3</span>
+              </div>
+              <div class="controls d-flex gap-2">
+                <a href="#" class="rounded border btn btn-success shadow-none">
+                  Action
+                </a>
+                <a href="#" class="btn-default rounded border btn shadow-none">
+                  Secondary
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card item border w-100 py-2">
+              <div
+                class="rounded-full icon d-flex justify-content-center mb-3 align-items-center"
+              >
+                <i class="bi bi-check-circle icon-success"></i>
+              </div>
+              <div class="cardContent">
+                <h2 class="mt-2 text-truncate-2">Card Title</h2>
+                <p class="small my-2">Card description</p>
+              </div>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge tag tag-success-light">Tage 1</span>
+                <span class="badge tag tag-info-light">Tage 2</span>
+                <span class="badge tag tag-neutral-light">Tage 3</span>
+              </div>
+              <div class="controls d-flex gap-2">
+                <a href="#" class="rounded border btn btn-success shadow-none">
+                  Action
+                </a>
+                <a href="#" class="btn-default rounded border btn shadow-none">
+                  Secondary
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card item border w-100 py-2">
+              <div
+                class="rounded-full icon d-flex justify-content-center mb-3 align-items-center"
+              >
+                <i class="bi bi-check-circle icon-success"></i>
+              </div>
+              <div class="cardContent">
+                <h2 class="mt-2 text-truncate-2">Card Title</h2>
+                <p class="small my-2">Card description</p>
+              </div>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge tag tag-success-light">Tage 1</span>
+                <span class="badge tag tag-info-light">Tage 2</span>
+                <span class="badge tag tag-neutral-light">Tage 3</span>
+              </div>
+              <div class="controls d-flex gap-2">
+                <a href="#" class="rounded border btn btn-success shadow-none">
+                  Action
+                </a>
+                <a href="#" class="btn-default rounded border btn shadow-none">
+                  Secondary
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <h5 class=" pb-2">
-            Important links
-          </h5>
-          <ul class="list-unstyled mt-2">
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                National service portal
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Open government data
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                National strategy for data
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Open data portal
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                E-participation portal
-              </a>
-            </li>
-          </ul>
+
+        <div class="w-100 mt-4">
+          <div
+            class="d-flex justify-content-between align-items-center py-4 mx-5"
+          >
+            <!-- Pagination -->
+            <div
+              class="service-swiper-pagination swiper-pagination position-relative start-0 end-0 bottom-0"
+            ></div>
+            <div class="position-relative me-5 pe-4">
+              <!-- Navigation buttons -->
+              <div class="swiper-button-prev start-0 end-0 bottom-0"></div>
+              <div
+                class="swiper-button-next start-0 end-0 bottom-0"
+                style="left: 50px !important"
+              ></div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <h5 class=" pb-2">
-            Contact and support
-          </h5>
-          <ul class="list-unstyled mt-2">
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Customer hub
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Contact us
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Engage with us
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Submit complaint
-              </a>
-            </li>
-            <li class="mb-2">
-              <a class=" text-decoration-none" href="">
-                Report corruption
-              </a>
-            </li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- new and articles section -->
+    <section class="news py-4">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-8 col-md-8 p-0">
+            <h2>News And Articles</h2>
+          </div>
+          <div
+            class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start"
+          >
+            <button class="btn btn-default border shadow-none">View all</button>
+          </div>
         </div>
-        <div class="followUs col-12 col-md-6 col-lg-3">
-          <h5 class="pb-2">
-            Social Media
-          </h5>
-          <ul class="list-unstyled mt-3 d-flex gap-2">
-            <li class="rounded">
-              <a href="" class=" text-decoration-none py-1 px-2 d-block">
-                <i class="bi  bi-twitter-x"></i>
-              </a>
-            </li>
-            <li class="rounded">
-              <a href="" class=" text-decoration-none py-1 px-2 d-block">
-                <i class="bi  bi-linkedin"></i>
-              </a>
-            </li>
-            <li class="rounded">
-              <a href="" class=" text-decoration-none py-1 px-2 d-block">
-                <i class="bi  bi-instagram"></i>
-              </a>
-            </li>
-          </ul>
-          <div class="acceptability mt-5">
-            <h5 class=" pb-2">
-              Acceptability Tools
-            </h5>
-            <ul class="list-unstyled mt-3 d-flex gap-2">
-              <li class="rounded py-1 px-2 pointer-event">
-                <i class="bi  bi-hand-index"></i>
+
+        <p class="col-9 mt-3">Here you can add a short description</p>
+
+        <div class="items row g-3 mt-2">
+          <div class="item col-12 col-md-6 col-lg-4">
+            <div class="card p-3 box">
+              <div class="image">
+                <img
+                  class="w-100 object-fit-cover"
+                  src="./assets/images/home/news.png"
+                  alt=""
+                />
+              </div>
+              <div class="cardContent">
+                <h2 class="text-truncate-2 text-capitalize">
+                  Title Card in two lines
+                </h2>
+                <p class="text-truncate-4 small">
+                  Here you can include a brief description
+                </p>
+              </div>
+              <div class="cardActions row mx-0">
+                <button class="btn btn-success col-auto rounded border">
+                  Action
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item col-12 col-md-6 col-lg-4">
+            <div class="card p-3 box">
+              <div class="image">
+                <img
+                  class="w-100 object-fit-cover"
+                  src="./assets/images/home/news.png"
+                  alt=""
+                />
+              </div>
+              <div class="cardContent">
+                <h2 class="text-truncate-2 text-capitalize">
+                  Title Card in two lines
+                </h2>
+                <p class="text-truncate-4 small">
+                  Here you can include a brief description
+                </p>
+              </div>
+              <div class="cardActions row mx-0">
+                <button class="btn btn-success col-auto rounded border">
+                  Action
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item col-12 col-md-6 col-lg-4">
+            <div class="card p-3 box">
+              <div class="image">
+                <img
+                  class="w-100 object-fit-cover"
+                  src="./assets/images/home/news.png"
+                  alt=""
+                />
+              </div>
+              <div class="cardContent">
+                <h2 class="text-truncate-2 text-capitalize">
+                  Title Card in two lines
+                </h2>
+                <p class="text-truncate-4 small">
+                  Here you can include a brief description
+                </p>
+              </div>
+              <div class="cardActions row mx-0">
+                <button class="btn btn-success col-auto rounded border">
+                  Action
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners section -->
+    <section class="partners my-4">
+      <div class="container position-relative">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="mb-3">Partners</h2>
+          <div class="d-flex gap-2">
+            <button
+              class="prev absolute btn shadow-none button-background-neutral-default"
+            >
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button
+              class="next absolute btn shadow-none button-background-neutral-default"
+            >
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="swiper partners-swiper">
+          <div class="swiper-wrapper pb-3">
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item border d-flex justify-content-center">
+                <img
+                  class="img-fluid p-2"
+                  src="./assets/images/shared/Logo_gov.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -->
+    <section>
+      <div class="container my-3">
+        <p class="text-end">
+          Last Modiefied Date: 04/12/2020 - 4:13 PM Saudi Arabia Time
+        </p>
+      </div>
+      <div class="main-br"></div>
+      <div class="container my-3">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap gap-3"
+        >
+          <div class="d-flex flex-wrap gap-2 align-items-center">
+            <p>Was this page useful?</p>
+            <button class="btn btn-success shadow-none" id="yesButton">
+              Yes
+            </button>
+            <button class="btn shadow-none border" id="noButton">No</button>
+          </div>
+          <p id="feedbackStats">60% of users said Yes from 2843 Feedbacks</p>
+        </div>
+
+        <form class="tell-us mt-3 d-none" id="feedbackForm">
+          <p class="fw-bold fs-5">Please tell us why.</p>
+
+          <!-- Good Feedback -->
+          <div class="good d-none" id="goodFeedback">
+            <div class="form-check mt-2 fw-bold">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="goodReason"
+                id="helpful"
+              />
+              <label class="form-check-label" for="helpful"
+                >It was helpful</label
+              >
+            </div>
+            <div class="form-check mt-2 fw-bold">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="goodReason"
+                id="relevant"
+              />
+              <label class="form-check-label" for="relevant"
+                >The answers were relevant</label
+              >
+            </div>
+            <div class="form-check mt-2 fw-bold">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="goodReason"
+                id="wellCrafted"
+              />
+              <label class="form-check-label" for="wellCrafted"
+                >The content was well-crafted</label
+              >
+            </div>
+            <div class="form-check mt-2 fw-bold">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="goodReason"
+                id="wellWritten"
+              />
+              <label class="form-check-label" for="wellWritten"
+                >It was well-written</label
+              >
+            </div>
+            <!-- Add Other Option as Radio -->
+            <div class="form-check mt-2 fw-bold">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="goodReason"
+                id="otherGood"
+              />
+              <label class="form-check-label" for="otherGood">Add Other</label>
+            </div>
+            <div id="goodOtherText" class="d-none">
+              <textarea
+                class="form-control mt-2 shadow-none"
+                rows="3"
+                placeholder="Please tell us more..."
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Bad Feedback -->
+          <div class="bad d-none" id="badFeedback">
+            <div class="form-check mt-2 fw-bold">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="badReason"
+                id="technical"
+              />
+              <label class="form-check-label" for="technical"
+                >There is a technical problem</label
+              >
+            </div>
+            <div class="form-check mt-2 fw-bold">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="badReason"
+                id="difficultDesign"
+              />
+              <label class="form-check-label" for="difficultDesign"
+                >The design made it difficult to read</label
+              >
+            </div>
+            <!-- Add Other Option as Radio -->
+            <div class="form-check mt-2 fw-bold">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="badReason"
+                id="otherBad"
+              />
+              <label class="form-check-label" for="otherBad">Add Other</label>
+            </div>
+            <div id="badOtherText" class="d-none">
+              <textarea
+                class="form-control mt-2 shadow-none"
+                rows="3"
+                placeholder="Please tell us more..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end gap-2 mt-3">
+            <button type="submit" class="btn btn-success shadow-none">
+              Submit
+            </button>
+            <button
+              type="button"
+              class="btn shadow-none border"
+              id="cancelButton"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row m-0 g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5 class="pb-2">Overview</h5>
+            <ul class="list-unstyled mt-2">
+              <li class="mb-2">
+                <a class="text-decoration-none" href="">
+                  About [name of the portal]
+                </a>
               </li>
-              <li class="rounded py-1 px-2 pointer-event">
-                <i class="bi  bi-zoom-in"></i>
+              <li class="mb-2">
+                <a class="text-decoration-none" href="">
+                  Privacy and terms of use
+                </a>
               </li>
-              <li class="rounded py-1 px-2 pointer-event">
-                <i class="bi  bi-eye"></i>
+              <li class="mb-2">
+                <a class="text-decoration-none" href=""> How to use </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href=""> News and events </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href="">
+                  Service level agreement statistics
+                </a>
               </li>
             </ul>
           </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5 class="pb-2">Important links</h5>
+            <ul class="list-unstyled mt-2">
+              <li class="mb-2">
+                <a class="text-decoration-none" href="">
+                  National service portal
+                </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href="">
+                  Open government data
+                </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href="">
+                  National strategy for data
+                </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href=""> Open data portal </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href="">
+                  E-participation portal
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5 class="pb-2">Contact and support</h5>
+            <ul class="list-unstyled mt-2">
+              <li class="mb-2">
+                <a class="text-decoration-none" href=""> Customer hub </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href=""> Contact us </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href=""> Engage with us </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href=""> Submit complaint </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none" href=""> Report corruption </a>
+              </li>
+            </ul>
+          </div>
+          <div class="followUs col-12 col-md-6 col-lg-3">
+            <h5 class="pb-2">Social Media</h5>
+            <ul class="list-unstyled mt-3 d-flex gap-2">
+              <li class="rounded">
+                <a href="" class="text-decoration-none py-1 px-2 d-block">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </li>
+              <li class="rounded">
+                <a href="" class="text-decoration-none py-1 px-2 d-block">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li class="rounded">
+                <a href="" class="text-decoration-none py-1 px-2 d-block">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="acceptability mt-5">
+              <h5 class="pb-2">Acceptability Tools</h5>
+              <ul class="list-unstyled mt-3 d-flex gap-2">
+                <li class="rounded py-1 px-2 pointer-event">
+                  <i class="bi bi-hand-index"></i>
+                </li>
+                <li class="rounded py-1 px-2 pointer-event">
+                  <i class="bi bi-zoom-in"></i>
+                </li>
+                <li class="rounded py-1 px-2 pointer-event">
+                  <i class="bi bi-eye"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 gy-3">
+          <div class="col-12 col-md-6">
+            <ul class="list-unstyled d-flex gap-2 mb-4">
+              <li>
+                <a class="" href="">Sitemap</a>
+              </li>
+              <li>
+                <a class="" href="">RSS</a>
+              </li>
+              <li>
+                <a class="" href="">Mobile App</a>
+              </li>
+            </ul>
+            <p class=" ">
+              All Rights Reserved For Digital Government Authority © 2024
+            </p>
+            <p class="small">Developed and Maintained by [name]</p>
+            <p class="small mt-3">last update date: 2020/04/02</p>
+          </div>
+          <div
+            class="logos col-12 col-md-6 d-flex gap-2 flex-wrap justify-content-center justify-content-md-end align-items-center"
+          >
+            <img
+              src="./assets/images/shared/Logo_&_GOV.svg"
+              alt=""
+              class="bg-light py-1 px-2"
+            />
+            <img src="./assets/images/shared/registerd-on-dga.png" alt="" />
+          </div>
         </div>
       </div>
+    </footer>
 
-      <div class="row mt-5 gy-3">
-        <div class="col-12 col-md-6">
-          <ul class="list-unstyled d-flex gap-2 mb-4">
-            <li>
-              <a class="" href="">Sitemap</a>
-            </li>
-            <li>
-              <a class="" href="">RSS</a>
-            </li>
-            <li>
-              <a class="" href="">Mobile App</a>
-            </li>
-          </ul>
-          <p class=" ">
-            All Rights Reserved For Digital Government Authority © 2024
-          </p>
-          <p class="small">
-            Developed and Maintained by [name]
-          </p>
-          <p class="small  mt-3">
-            last update date: 2020/04/02
-          </p>
-        </div>
-        <div
-          class="logos col-12 col-md-6 d-flex gap-2 flex-wrap justify-content-center justify-content-md-end align-items-center">
-          <img src="./assets/images/shared/Logo_&_GOV.svg" alt="" class="bg-light py-1 px-2" />
-          <img src="./assets/images/shared/registerd-on-dga.png" alt="" />
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JS -->
-  <script src="js/main.min.js"></script>
-  <!-- custom -->
-  <!-- <script src="js/your-custom-file.js"></script> -->
-</body>
-
+    <!-- JS -->
+    <script src="js/main.min.js"></script>
+    <!-- custom -->
+    <!-- <script src="js/your-custom-file.js"></script> -->
+  </body>
 </html>

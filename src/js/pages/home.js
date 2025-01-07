@@ -28,6 +28,18 @@
 // });
 
 
+var swiper = new Swiper('.hero-swiper', {
+  loop: true,
+  pagination: {
+    el: '.hero-swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+  },
+});
+
+
 var swiper = new Swiper(".service-swiper", {
   // loop: true, // Ensure loop is always on
   freeMode: true, // Free mode for smooth dragging
@@ -38,7 +50,7 @@ var swiper = new Swiper(".service-swiper", {
     disableOnInteraction: false, // Autoplay will continue even after user interaction
   },
   pagination: {
-    el: ".swiper-pagination", // Pagination element
+    el: ".service-swiper-pagination", // Pagination element
     clickable: true, // Make pagination clickable
   },
   navigation: {
@@ -65,10 +77,6 @@ var swiper = new Swiper(".service-swiper", {
     },
   },
 });
-
-
-
-
 
 
 var swiper = new Swiper(".partners-swiper", {
