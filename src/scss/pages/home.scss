@@ -1,10 +1,10 @@
 /* hero */
 section.home-hero {
     padding-block: 80px;
-    background: var(--main-color-dark);
-    background: linear-gradient(330deg,
-            var(--main-color-dark) 0%,
-            var(--main-color) 100%);
+    background: var(--background-sa-flag);
+    background: linear-gradient(230deg,
+            var(--background-primary) 0%,
+            var(--background-sa-flag) 100%);
 }
 
 .rtl section.home-hero {
@@ -14,7 +14,9 @@ section.home-hero {
 }
 
 section.home-hero h1 {
-    font-size: 60px;
+    font-size: var(--display-xl--semibold);
+    font-weight: 600;
+    color: var(--text-oncolor-primary);
 }
 
 /* news and articles */
