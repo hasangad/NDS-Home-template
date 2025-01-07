@@ -22,24 +22,24 @@
   <!-- navbar -->
   <header>
     <!-- Top Bar -->
-    <div class="topBar icons d-flex justify-content-between py-2 px-4 flex-wrap">
+    <div class="topBar icons d-flex justify-content-between py-2 px-4 flex-wrap d-none">
       <!-- start Icons -->
       <ul class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0">
         <li>
           <i class="bi bi-cloud"></i>
-          <span data-translate="cloud">Cloud</span>
+          <span>Cloud</span>
         </li>
         <li>
           <i class="bi bi-calendar"></i>
-          <span data-translate="date">3-Sep-2024</span>
+          <span>3-Sep-2024</span>
         </li>
         <li>
           <i class="bi bi-clock"></i>
-          <span data-translate="time">2:30 PM</span>
+          <span>2:30 PM</span>
         </li>
         <li>
           <i class="bi bi-geo-alt"></i>
-          <span data-translate="location">Al-Riyadh</span>
+          <span>Al-Riyadh</span>
         </li>
       </ul>
 
@@ -54,7 +54,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container-fluid px-0 px-md-2">
         <!-- Brand Section -->
         <div class="navbar-brand w-fit row col-2 col-sm-2 col-auto align-items-center mx-0">
           <a href="/" class="col-auto">
@@ -65,90 +65,71 @@
         <!-- Toggler Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"> <i class="bi bi-list fs-1"></i> </span>
         </button>
 
         <!-- Navbar Content -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Links -->
-          <ul class="navbar-nav d-flex flex-grow-1 gap-2 mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle small" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" data-translate="tabs">
+          <ul class="navbar-nav d-flex flex-grow-1 gap-2 mb-2 mb-lg-0 ps-4 ps-md-0 py-4 py-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
                 Home
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item small" href="#" data-translate="tab1">Tab 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item small" href="#" data-translate="tab2">Tab 2</a>
-                </li>
-              </ul>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle small" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" data-translate="tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="#About">
                 About
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item small" href="#" data-translate="tab1">Tab 1</a>
-                </li>
-                <li>
-                  <a class="dropdown-item small" href="#" data-translate="tab2">Tab 2</a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle small" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" data-translate="tabs">
+              <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Tabs
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item small" href="#" data-translate="tab1">Tab 1</a>
+                  <a class="dropdown-item" href="#">Tab 1</a>
                 </li>
                 <li>
-                  <a class="dropdown-item small" href="#" data-translate="tab2">Tab 2</a>
+                  <a class="dropdown-item" href="#">Tab 2</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle small" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false" data-translate="tabs">
+              <a class="nav-link " href="#" role="button">
                 Tabs
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item small" href="#" data-translate="tab1">Tab 1</a>
+                  <a class="dropdown-item" href="#">Tab 1</a>
                 </li>
                 <li>
-                  <a class="dropdown-item small" href="#" data-translate="tab2">Tab 2</a>
+                  <a class="dropdown-item" href="#">Tab 2</a>
                 </li>
               </ul>
             </li>
           </ul>
 
           <!-- Search and Buttons -->
-          <form class="d-flex flex-grow-1 gap-1 align-items-center justify-content-end flex-wrap">
+          <form
+            class="d-flex flex-grow-1 gap-1 align-items-center justify-content-center justify-content-md-end flex-wrap">
             <div class="input-group px-2 d-flex" id="input-group">
               <span class="input-group-text px-0 bg-transparent border-0" id="search-input-icon">
                 <i class="bi bi-search"></i>
               </span>
               <input type="text" class="form-control bg-transparent border-0 shadow-none flex-grow-1"
-                placeholder="Search" aria-label="Search" aria-describedby="search-input-icon" id="search-input"
-                data-translate="searchPlaceholder" />
+                placeholder="Search" aria-label="Search" aria-describedby="search-input-icon" id="search-input" />
             </div>
-            <button type="button" id="langButton" class="btn shadow-none">
+            <a href="" type="button" id="langButton" class="btn shadow-none">
               <i class="bi bi-translate fs-5"></i>
-              <span class="small" data-translate="langButton">عربى</span>
-            </button>
-            <button type="button" class="btn shadow-none">
+              <span>عربى</span>
+            </a>
+            <a href="#" type="button" class="btn shadow-none">
               <i class="bi bi-person fs-5"></i>
-              <span class="small" data-translate="login">Login</span>
-            </button>
+              <span class="login">Login</span>
+            </a>
           </form>
         </div>
       </div>
@@ -160,16 +141,16 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-5">
-          <h1 class="d-block" data-translate="mainSectionTitle">
+          <h1 class="d-block">
             Hero section
           </h1>
-          <span class="d-block my-3" data-translate="mainSectionDescription">
+          <span class="d-block my-3">
             Here you can add a brief description about the purpose of the portal followed with a call to action button
             and
             an image
             or an illustration on the left hand side.
           </span>
-          <button class="d-block btn btn-light" data-translate="mainActionButton">
+          <button class="d-block btn btn-light">
             Main Action
           </button>
         </div>
@@ -178,7 +159,7 @@
   </section>
 
   <!-- About Us section -->
-  <section class="nds-about py-5 my-3">
+  <section id="About" class="nds-about py-5 my-3">
     <div class="container">
       <div class="row m-0">
         <div class="col-10 col-md-8">
@@ -201,28 +182,28 @@
 
     <div class="our-statistics container">
       <div class="row mt-5 gy-2 mx-0">
-        <div class="stateNumber col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
           <i class="bi bi-people"></i>
           <div>
             <p class="fs-1">1.5M</p>
             <span class="small">Person</span>
           </div>
         </div>
-        <div class="stateNumber col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
           <i class="bi bi-plus-lg fs-1"></i>
           <div>
             <p class="fs-1">1.5M</p>
             <span class="small">Person</span>
           </div>
         </div>
-        <div class="stateNumber col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
           <i class="bi bi-star fs-1"></i>
           <div>
             <p class="fs-1">1.5M</p>
             <span class="small">Person</span>
           </div>
         </div>
-        <div class="stateNumber col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+        <div class="stateNumber col-6 col-sm-6 col-md-4 col-lg-3 text-center">
           <i class="bi bi-flower3 fs-1"></i>
           <div>
             <p class="fs-1">1.5M</p>
@@ -238,19 +219,19 @@
     <div class="container">
 
       <div class="row m-0">
-        <div class="col-10 col-md-8 p-0">
+        <div class="col-8 col-md-8 p-0">
           <h2 class="">
             Services section
           </h2>
         </div>
-        <div class="col-2 col-md-4 p-0 d-flex justify-content-end align-items-start">
+        <div class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start">
           <button class="btn btn-default border shadow-none">
             View all
           </button>
         </div>
       </div>
 
-      <p class="small w-50 w-sm-100 mt-3">
+      <p class="col-9 mt-3">
         Here you can add a short description about the purpose of the portal
         followed by a call to action button and an image or illustration on
         the left side.
@@ -296,10 +277,10 @@
               <i class="bi bi-check-circle icon-success"></i>
             </div>
             <div class="cardContent">
-              <h2 class=" mt-2 text-truncate-2" data-translate="cardTitle">
+              <h2 class=" mt-2 text-truncate-2">
                 Card Title
               </h2>
-              <p class="small my-2" data-translate="cardDescription">
+              <p class="small my-2">
                 Card description
               </p>
             </div>
@@ -489,19 +470,19 @@
   <section class="news py-4">
     <div class="container">
       <div class="row m-0">
-        <div class="col-10 col-md-8 p-0">
+        <div class="col-8 col-md-8 p-0">
           <h2>
             News And Articles
           </h2>
         </div>
-        <div class="col-2 col-md-4 p-0 d-flex justify-content-end align-items-start">
+        <div class="col-4 col-md-4 p-0 d-flex justify-content-end align-items-start">
           <button class="btn btn-default border shadow-none">
             View all
           </button>
         </div>
       </div>
 
-      <p class="small w-50 w-sm-100 mt-3">
+      <p class="col-9 mt-3">
         Here you can add a short description
       </p>
 
@@ -549,19 +530,18 @@
         <div class="item col-12 col-md-6 col-lg-4">
           <div class="card  p-3 box">
             <div class="image">
-              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt=""
-                data-translate="cardImageAlt" />
+              <img class="w-100 object-fit-cover" src="./assets/images/home/news.png" alt="" />
             </div>
             <div class="cardContent">
-              <h2 class="text-truncate-2 text-capitalize" data-translate="cardTitle">
+              <h2 class="text-truncate-2 text-capitalize">
                 Title Card in two lines
               </h2>
-              <p class="text-truncate-4 small" data-translate="cardDescription">
+              <p class="text-truncate-4 small">
                 Here you can include a brief description
               </p>
             </div>
             <div class="cardActions row mx-0">
-              <button class="btn btn-success col-auto rounded border" data-translate="cardActionButton">
+              <button class="btn btn-success col-auto rounded border">
                 Action
               </button>
             </div>
@@ -658,26 +638,26 @@
   </section>
 
   <!-- section -->
-  <div class="container my-3 d-flex justify-content-end">
+  <div class="container my-3 d-flex justify-content-center justify-content-md-end">
     <p class="small">
       Last Modified Date: 04/12/2020 - 4:13 PM Saudi Arabia Time
     </p>
   </div>
   <div class="userSurvey container-fluid my-3 pt-3">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-        <div class="d-flex flex-wrap gap-2 align-items-center">
-          <p class="small">
+      <div class="col-12">
+        <div class="row mb-3 align-items-center">
+          <p class="col-7 col-md-2">
             Was this page useful?
           </p>
-          <button class="btn btn-success shadow-none">
+          <button class="col-2 col-md-auto btn btn-success shadow-none me-1">
             Yes
           </button>
-          <button class="btn btn-default shadow-none border">
+          <button class="col-2 col-md-auto btn btn-default shadow-none border">
             No
           </button>
         </div>
-        <p class="small">
+        <p>
           60% of users said Yes from 2843 Feedbacks
         </p>
       </div>

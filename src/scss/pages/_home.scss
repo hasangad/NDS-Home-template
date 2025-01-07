@@ -1,6 +1,5 @@
 /* hero */
 section.home-hero {
-    padding-block: 80px;
     background: var(--background-sa-flag);
     background: linear-gradient(230deg,
             var(--background-primary) 0%,
@@ -129,4 +128,10 @@ section.partners .btn.next {
     section.partners .btn.next {
         position: static;
     }
+
+    section.home-hero,
+    section {
+        padding: var(--spacing-10) var(--spacing-3);
+    }
+
 }
