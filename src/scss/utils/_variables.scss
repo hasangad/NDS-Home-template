@@ -68,49 +68,49 @@
   --display-xs--semibold: 1.5rem;
   --display-xs--bold: 1.5rem;
   --display-xs--medium-italic: 1.5rem;
-  --xl--regular: 1.25rem;
-  --xl--medium: 1.25rem;
-  --xl--semibold: 1.25rem;
-  --xl--bold: 1.25rem;
-  --xl--regular-italic: 1.25rem;
-  --xl--medium-italic: 1.25rem;
-  --xl--semibold-italic: 1.25rem;
-  --xl--bold-italic: 1.25rem;
-  --xl--regular-underlined: 1.25rem;
-  --lg--regular: 1.12rem;
-  --lg--medium: 1.12rem;
-  --lg--semibold: 1.12rem;
-  --lg--bold: 1.12rem;
-  --lg--regular-italic: 1.12rem;
-  --lg--medium-italic: 1.12rem;
-  --lg--semibold-italic: 1.12rem;
-  --lg--bold-italic: 1.12rem;
-  --lg--regular-underlined: 1.12rem;
-  --lg--medium-underlined: 1.12rem;
-  --md--regular: 1rem;
-  --md--medium: 1rem;
-  --md--semibold: 1rem;
-  --md--bold: 1rem;
-  --md--regular-italic: 1rem;
-  --md--medium-italic: 1rem;
-  --md--semibold-italic: 1rem;
-  --md--bold-italic: 1rem;
-  --md--regular-underlined: 1rem;
-  --md--medium-underlined: 1rem;
-  --sm--regular: 0.88rem;
-  --sm--medium: 0.88rem;
-  --sm--semibold: 0.88rem;
-  --sm--bold: 0.88rem;
-  --sm--regular-underlined: 0.88rem;
-  --sm--medium-underlined: 0.88rem;
-  --xs--regular: 0.75rem;
-  --xs--medium: 0.75rem;
-  --xs--semibold: 0.75rem;
-  --xs--bold: 0.75rem;
-  --2xs--regular: 0.62rem;
-  --2xs--medium: 0.62rem;
-  --2xs--semi-bold: 0.62rem;
-  --2xs--bold: 0.62rem;
+  --text-xl--regular: 1.25rem;
+  --text-xl--medium: 1.25rem;
+  --text-xl--semibold: 1.25rem;
+  --text-xl--bold: 1.25rem;
+  --text-xl--regular-italic: 1.25rem;
+  --text-xl--medium-italic: 1.25rem;
+  --text-xl--semibold-italic: 1.25rem;
+  --text-xl--bold-italic: 1.25rem;
+  --text-xl--regular-underlined: 1.25rem;
+  --text-lg--regular: 1.12rem;
+  --text-lg--medium: 1.12rem;
+  --text-lg--semibold: 1.12rem;
+  --text-lg--bold: 1.12rem;
+  --text-lg--regular-italic: 1.12rem;
+  --text-lg--medium-italic: 1.12rem;
+  --text-lg--semibold-italic: 1.12rem;
+  --text-lg--bold-italic: 1.12rem;
+  --text-lg--regular-underlined: 1.12rem;
+  --text-lg--medium-underlined: 1.12rem;
+  --text-md--regular: 1rem;
+  --text-md--medium: 1rem;
+  --text-md--semibold: 1rem;
+  --text-md--bold: 1rem;
+  --text-md--regular---italic: 1rem;
+  --text-md--medium---italic: 1rem;
+  --text-md--semibold---italic: 1rem;
+  --text-md--bold---italic: 1rem;
+  --text-md--regular---underlined: 1rem;
+  --text-md--medium---underlined: 1rem;
+  --text-sm--regular: 0.88rem;
+  --text-sm--medium: 0.88rem;
+  --text-sm--semibold: 0.88rem;
+  --text-sm--bold: 0.88rem;
+  --text-sm--regular-underlined: 0.88rem;
+  --text-sm--medium-underlined: 0.88rem;
+  --text-xs--regular: 0.75rem;
+  --text-xs--medium: 0.75rem;
+  --text-xs--semibold: 0.75rem;
+  --text-xs--bold: 0.75rem;
+  --text-2xs--regular: 0.62rem;
+  --text-2xs--medium: 0.62rem;
+  --text-2xs--semi-bold: 0.62rem;
+  --text-2xs--bold: 0.62rem;
 
   /* Effect styles */
   /* Shadows */
@@ -137,9 +137,9 @@
 /* /// Foudations Varibles /// */
 /* Containers - Value */
 :root {
-  --container-max-width-desktop: var(--spacing-320-(1, 280px));
-  --container-padding-desktop: var(--spacing-8-(32px));
-  --container-padding-mobile: var(--spacing-4-(16px));
+  --container-max-width-desktop: var(--spacing-320);
+  --container-padding-desktop: var(--spacing-8);
+  --container-padding-mobile: var(--spacing-4);
 }
 
 /* Primitives - Values */
@@ -318,7 +318,7 @@
   --spacing-320: 1280px;
   --spacing-360: 1440px;
   --spacing-400: 1600px;
-  --spacing-480-: 1920px;
+  --spacing-480: 1920px;
 
   /* Radius */
   --radius-0: 0px;
@@ -1459,4 +1459,12 @@
     --unselected-tab-icon: var(--colors-neutral-100);
   }
 
+
+  /* Extras */
+
+  .btn-light {
+    background-color: var(--button-background-oncolor-default);
+    border-color: var(--border-background-neutral);
+    color: var(--text-default);
+  }
 }

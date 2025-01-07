@@ -3,24 +3,39 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-}
+
+  .topBar {
+    background-color: var(--background-neutral-100);
+    border-bottom: 1px solid var(--border-background-neutral);
+  }
+
+  .navbar {
+    background-color: var(--background-menu);
+    border-bottom: 1px solid var(--border-background-neutral);
+
+    .navbar-brand a .logo,
+    .navbar-brand a .h_2030 {
+      // width: 66px;
+      height: 58px;
+    }
+
+    form {
+      .input-group {
+        width: 117px;
+        border: 2px solid transparent;
+        transition: 0.3s;
+
+        .input-group-text {
+          cursor: text;
+        }
+
+        input {
+          font-size: 14px;
+        }
+      }
 
 
-nav.navbar form .input-group {
-  width: 117px;
-  border: 2px solid transparent;
-  transition: 0.3s;
-}
+    }
 
-nav.navbar form .input-group .input-group-text {
-  cursor: text;
-}
-
-nav.navbar form .input-group input {
-  font-size: 14px;
-}
-
-.navbar-brand a .logo,
-.navbar-brand a .h_2030 {
-  width: 66px;
+  }
 }

@@ -1,4 +1,25 @@
 body {
     color: var(--text-default);
     background-color: var(--background-white);
+
+    a,
+    .nav-link,
+    i,
+    span,
+    div,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    input,
+    button,
+    textarea,
+    select,
+    option {
+        color: var(--text-default);
+    }
 }

@@ -5,6 +5,16 @@ section.home-hero {
     background: linear-gradient(230deg,
             var(--background-primary) 0%,
             var(--background-sa-flag) 100%);
+
+    span,
+    p {
+        color: var(--text-oncolor-primary);
+        font-size: 20px;
+    }
+
+    min-height: 491px;
+
+    padding: var(--spacing-10) var(--spacing-20);
 }
 
 .rtl section.home-hero {
@@ -93,6 +103,32 @@ section.partners .btn.prev {
 section.partners .btn.next {
     right: -38px;
 }
+
+
+.nds-about {
+
+    .our-statistics {
+
+        i {
+            display: block;
+            margin: 0 auto;
+            color: var(--icon-success);
+            background-color: var(--background-brand-light);
+            border-radius: 100%;
+            height: 56px;
+            width: 56px;
+            font-size: var(--display-sm--regular);
+            line-height: 1.9;
+        }
+
+        p {
+            color: var(--text-primary-sa-flag)
+        }
+
+    }
+
+}
+
 
 @media (max-width: 767px) {
 

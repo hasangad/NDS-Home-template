@@ -7,10 +7,10 @@
   <meta name="theme-color" content="#074D31">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-theme-color" content="#4CAF50">
+  <meta name="apple-mobile-web-app-theme-color" content="#074D31">
   <meta name="apple-mobile-web-app-title" content="My Website">
-  <link rel="mask-icon" href="/icon.svg" color="#4CAF50">
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="mask-icon" href="./assets/images/shared/gov_logo.svg" color="#4CAF50">
+  <link rel="icon" type="image/x-icon" href="./assets/images/shared/gov_logo.ico" />
   <title>Home</title>
   <link rel="stylesheet" href="./css/styles.css" />
   <!-- custom -->
@@ -20,30 +20,30 @@
 
 <body>
   <!-- navbar -->
-  <header class="border-bottom bg-light">
+  <header>
     <!-- Top Bar -->
-    <div class="icons bg-gray-1 d-flex justify-content-between py-2 px-4 flex-wrap border-bottom">
-      <!-- Left Icons -->
+    <div class="topBar icons d-flex justify-content-between py-2 px-4 flex-wrap">
+      <!-- start Icons -->
       <ul class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0">
         <li>
           <i class="bi bi-cloud"></i>
-          <span class="small" data-translate="cloud">Cloud</span>
+          <span data-translate="cloud">Cloud</span>
         </li>
         <li>
-          <i class="bi bi-archive"></i>
-          <span class="small" data-translate="date">3-Sep-2024</span>
+          <i class="bi bi-calendar"></i>
+          <span data-translate="date">3-Sep-2024</span>
         </li>
         <li>
-          <i class="bi bi-alarm"></i>
-          <span class="small" data-translate="time">2:30 PM</span>
+          <i class="bi bi-clock"></i>
+          <span data-translate="time">2:30 PM</span>
         </li>
         <li>
           <i class="bi bi-geo-alt"></i>
-          <span class="small" data-translate="location">Al-Riyadh</span>
+          <span data-translate="location">Al-Riyadh</span>
         </li>
       </ul>
 
-      <!-- Right Icons -->
+      <!-- end Icons -->
       <ul class="d-flex flex-wrap align-items-center list-unstyled gap-3 mb-0">
         <li><i class="bi bi-mic"></i></li>
         <li><i class="bi bi-zoom-in"></i></li>
@@ -53,7 +53,7 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <!-- Brand Section -->
         <div class="navbar-brand w-fit row col-2 col-sm-2 col-auto align-items-center mx-0">
@@ -73,7 +73,7 @@
           <!-- Links -->
           <ul class="navbar-nav d-flex flex-grow-1 gap-2 mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link text-dark dropdown-toggle small" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle small" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false" data-translate="tabs">
                 Tabs
               </a>
@@ -88,7 +88,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link text-dark dropdown-toggle small" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link  dropdown-toggle small" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false" data-translate="tabs">
                 Tabs
               </a>
@@ -102,7 +102,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link text-dark dropdown-toggle small" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link  dropdown-toggle small" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false" data-translate="tabs">
                 Tabs
               </a>
@@ -116,7 +116,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link text-dark dropdown-toggle small" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link  dropdown-toggle small" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false" data-translate="tabs">
                 Tabs
               </a>
@@ -156,24 +156,29 @@
   </header>
 
   <!-- hero -->
-  <section class="home-hero">
+  <section class="home-hero d-flex align-items-center">
     <div class="container">
-      <h1 class="text-light" data-translate="mainSectionTitle">
-        Main section
-      </h1>
-      <span class="text-light w-50 d-block w-sm-100 my-3" data-translate="mainSectionDescription">
-        Here you can add a short description about the purpose of the portal
-        followed by a call to action button and an image or illustration on
-        the left side.
-      </span>
-      <button class="btn btn-light" data-translate="mainActionButton">
-        Main Action
-      </button>
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <h1 class="d-block" data-translate="mainSectionTitle">
+            Hero section
+          </h1>
+          <span class="d-block my-3" data-translate="mainSectionDescription">
+            Here you can add a brief description about the purpose of the portal followed with a call to action button
+            and
+            an image
+            or an illustration on the left hand side.
+          </span>
+          <button class="d-block btn btn-light" data-translate="mainActionButton">
+            Main Action
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- About Us section -->
-  <section class="py-5 my-3">
+  <section class="nds-about py-5 my-3">
     <div class="container">
       <div class="row m-0">
         <div class="col-10 col-md-8">
@@ -194,26 +199,26 @@
       </div>
     </div>
 
-    <div class="custom-container">
+    <div class="our-statistics container">
       <div class="row mt-5 gy-2 mx-0">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-          <i class="bi bi-people main-text fs-1"></i>
-          <p class="fs-1 main-text">1.5M</p>
+          <i class="bi bi-people"></i>
+          <p class="fs-1">1.5M</p>
           <span class="small" data-translate="personText">Person</span>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-          <i class="bi bi-plus-lg main-text fs-1"></i>
-          <p class="fs-1 main-text">1.5M</p>
+          <i class="bi bi-plus-lg fs-1"></i>
+          <p class="fs-1">1.5M</p>
           <span class="small" data-translate="personText">Person</span>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-          <i class="bi bi-star main-text fs-1"></i>
-          <p class="fs-1 main-text">1.5M</p>
+          <i class="bi bi-star fs-1"></i>
+          <p class="fs-1">1.5M</p>
           <span class="small" data-translate="personText">Person</span>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-          <i class="bi bi-flower3 main-text fs-1"></i>
-          <p class="fs-1 main-text">1.5M</p>
+          <i class="bi bi-flower3 fs-1"></i>
+          <p class="fs-1">1.5M</p>
           <span class="small" data-translate="personText">Person</span>
         </div>
       </div>
@@ -656,135 +661,135 @@
     <div class="container">
       <div class="row m-0 g-3">
         <div class="col-12 col-md-6 col-lg-3">
-          <h5 class="text-light pb-2" data-translate="overviewTitle">
+          <h5 class=" pb-2" data-translate="overviewTitle">
             Overview
           </h5>
           <ul class="list-unstyled mt-2">
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="aboutPortal">
+              <a class=" text-decoration-none" href="" data-translate="aboutPortal">
                 About [name of the portal]
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="privacyTerms">
+              <a class=" text-decoration-none" href="" data-translate="privacyTerms">
                 Privacy and terms of use
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="howToUse">
+              <a class=" text-decoration-none" href="" data-translate="howToUse">
                 How to use
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="newsEvents">
+              <a class=" text-decoration-none" href="" data-translate="newsEvents">
                 News and events
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="slaStatistics">
+              <a class=" text-decoration-none" href="" data-translate="slaStatistics">
                 Service level agreement statistics
               </a>
             </li>
           </ul>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <h5 class="text-light pb-2" data-translate="importantLinksTitle">
+          <h5 class=" pb-2" data-translate="importantLinksTitle">
             Important links
           </h5>
           <ul class="list-unstyled mt-2">
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="nationalServicePortal">
+              <a class=" text-decoration-none" href="" data-translate="nationalServicePortal">
                 National service portal
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="openGovData">
+              <a class=" text-decoration-none" href="" data-translate="openGovData">
                 Open government data
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="nationalStrategy">
+              <a class=" text-decoration-none" href="" data-translate="nationalStrategy">
                 National strategy for data
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="openDataPortal">
+              <a class=" text-decoration-none" href="" data-translate="openDataPortal">
                 Open data portal
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="eParticipationPortal">
+              <a class=" text-decoration-none" href="" data-translate="eParticipationPortal">
                 E-participation portal
               </a>
             </li>
           </ul>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <h5 class="text-light pb-2" data-translate="contactSupportTitle">
+          <h5 class=" pb-2" data-translate="contactSupportTitle">
             Contact and support
           </h5>
           <ul class="list-unstyled mt-2">
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="customerHub">
+              <a class=" text-decoration-none" href="" data-translate="customerHub">
                 Customer hub
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="contactUs">
+              <a class=" text-decoration-none" href="" data-translate="contactUs">
                 Contact us
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="engageWithUs">
+              <a class=" text-decoration-none" href="" data-translate="engageWithUs">
                 Engage with us
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="submitComplaint">
+              <a class=" text-decoration-none" href="" data-translate="submitComplaint">
                 Submit complaint
               </a>
             </li>
             <li class="mb-2">
-              <a class="text-light text-decoration-none" href="" data-translate="reportCorruption">
+              <a class=" text-decoration-none" href="" data-translate="reportCorruption">
                 Report corruption
               </a>
             </li>
           </ul>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <h5 class="text-light pb-2" data-translate="socialMediaTitle">
+          <h5 class=" pb-2" data-translate="socialMediaTitle">
             Social Media
           </h5>
           <ul class="list-unstyled mt-2 d-flex gap-2">
             <li class="border rounded">
-              <a href="" class="text-dark text-decoration-none py-1 px-2 d-block" data-translate="twitterLink">
-                <i class="bi text-light bi-twitter-x fs-4"></i>
+              <a href="" class=" text-decoration-none py-1 px-2 d-block" data-translate="twitterLink">
+                <i class="bi  bi-twitter-x fs-4"></i>
               </a>
             </li>
             <li class="border rounded">
-              <a href="" class="text-dark text-decoration-none py-1 px-2 d-block" data-translate="linkedinLink">
-                <i class="bi text-light bi-linkedin fs-4"></i>
+              <a href="" class=" text-decoration-none py-1 px-2 d-block" data-translate="linkedinLink">
+                <i class="bi  bi-linkedin fs-4"></i>
               </a>
             </li>
             <li class="border rounded">
-              <a href="" class="text-dark text-decoration-none py-1 px-2 d-block" data-translate="instagramLink">
-                <i class="bi text-light bi-instagram fs-4"></i>
+              <a href="" class=" text-decoration-none py-1 px-2 d-block" data-translate="instagramLink">
+                <i class="bi  bi-instagram fs-4"></i>
               </a>
             </li>
           </ul>
           <div class="acceptability mt-3">
-            <h5 class="text-light pb-2" data-translate="acceptabilityToolsTitle">
+            <h5 class=" pb-2" data-translate="acceptabilityToolsTitle">
               Acceptability Tools
             </h5>
             <ul class="list-unstyled mt-2 d-flex gap-2">
               <li class="rounded border py-1 px-2 pointer-event" data-translate="handIndexTool">
-                <i class="bi text-light bi-hand-index fs-4"></i>
+                <i class="bi  bi-hand-index fs-4"></i>
               </li>
               <li class="rounded border py-1 px-2 pointer-event" data-translate="zoomInTool">
-                <i class="bi text-light bi-zoom-in fs-4"></i>
+                <i class="bi  bi-zoom-in fs-4"></i>
               </li>
               <li class="rounded py-1 border px-2 pointer-event" data-translate="eyeTool">
-                <i class="bi text-light bi-eye fs-4"></i>
+                <i class="bi  bi-eye fs-4"></i>
               </li>
             </ul>
           </div>
@@ -795,22 +800,22 @@
         <div class="col-12 col-md-6">
           <ul class="list-unstyled d-flex gap-2 mb-4">
             <li>
-              <a class="text-light" href="" data-translate="sitemapLink">Sitemap</a>
+              <a class="" href="" data-translate="sitemapLink">Sitemap</a>
             </li>
             <li>
-              <a class="text-light" href="" data-translate="rssLink">RSS</a>
+              <a class="" href="" data-translate="rssLink">RSS</a>
             </li>
             <li>
-              <a class="text-light" href="" data-translate="mobileAppLink">Mobile App</a>
+              <a class="" href="" data-translate="mobileAppLink">Mobile App</a>
             </li>
           </ul>
-          <p class="fw-bold text-light" data-translate="allRightsReserved">
+          <p class="fw-bold " data-translate="allRightsReserved">
             All Rights Reserved For Digital Government Authority &copy; 2024
           </p>
-          <p class="small text-light" data-translate="developedBy">
+          <p class="small " data-translate="developedBy">
             Developed and Maintained by [name]
           </p>
-          <p class="small text-light mt-3" data-translate="lastUpdate">
+          <p class="small  mt-3" data-translate="lastUpdate">
             last update date: 2020/04/02
           </p>
         </div>
