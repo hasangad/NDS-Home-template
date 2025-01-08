@@ -14,7 +14,7 @@ Our goal is to create a simplified entry point for companies and organizations i
 
 ## Features
 
-![Desktop Preview](https://raw.githubusercontent.com/hasangad/NDS-Home-template/refs/heads/master/mobile_preview.gif)
+![Mobile Preview](https://raw.githubusercontent.com/hasangad/NDS-Home-template/refs/heads/master/mobile_preview.gif)
 
 - Fully responsive design.
 - Built on **Bootstrap 5** for scalability and flexibility.
