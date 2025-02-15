@@ -4,23 +4,36 @@ section.home-hero {
     background: linear-gradient(230deg,
             var(--background-primary) 0%,
             var(--background-sa-flag) 100%);
+    min-height: 491px;
+    padding: var(--spacing-10) var(--spacing-20);
+    position: relative;
+
+    .swiper{
+        margin-top: 65px;
+    }
+
+    .hero-swiper-pagination{
+        position: absolute !important;
+        bottom: 20px !important;
+        .swiper-pagination-bullet{
+            width: 14px;
+            height: 14px;
+            background-color: rgba(30, 255, 0, 0.303) !important;
+            &.swiper-pagination-bullet-active{
+                background-color: var(--colors-base-white) !important;
+            }
+        }
+
+
+    }
 
     span,
     p {
         color: var(--text-oncolor-primary);
         font-size: 20px;
     }
-
-    min-height: 491px;
-
-    padding: var(--spacing-10) var(--spacing-20);
 }
 
-.rtl section.home-hero {
-    background: linear-gradient(45deg,
-            var(--main-color-dark) 0%,
-            var(--main-color) 100%);
-}
 
 section.home-hero h1 {
     font-size: var(--display-xl--semibold);

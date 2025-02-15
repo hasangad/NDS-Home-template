@@ -61,15 +61,7 @@ body {
 
     &:after {
         font-size: var(--text-md-regular);
-        color: var(--icon-oncolor);
-    }
-
-    &.swiper-button-disabled {
-        background-color: var(--background-neutral-50) !important;
-
-        &:after {
-            color: var(--colors-base-black);
-        }
+        color: var(--icon-oncolor) !important;
     }
 }
 
